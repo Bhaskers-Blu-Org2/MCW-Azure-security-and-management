@@ -9,7 +9,7 @@ Before the hands-on lab setup guide
 </div>
 
 <div class="MCWHeader3">
-September 2018
+December 2018
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -29,9 +29,9 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 - [Azure Security and Management before the hands-on lab setup guide](#azure-security-and-management-before-the-hands-on-lab-setup-guide)
     - [Requirements](#requirements)
     - [Before the hands-on lab](#before-the-hands-on-lab)
-        - [Task 1: Build a lab Virtual Machine in Azure.](#task-1-build-a-lab-virtual-machine-in-azure)
-        - [Task 2: Connect to LABVM and download and unzip student files](#task-2-connect-to-labvm-and-download-and-unzip-student-files)
-        - [Task 3: Create a new Azure portal dashboard](#task-3-create-a-new-azure-portal-dashboard)
+        - [Task 1: Build a lab Virtual Machine in Azure](#task-1--build-a-lab-virtual-machine-in-azure)
+        - [Task 2: Connect to LABVM and download and unzip student files](#task-2--connect-to-labvm-and-download-and-unzip-student-files)
+        - [Task 3: Create a new Azure portal dashboard](#task-3--create-a-new-azure-portal-dashboard)
 
 <!-- /TOC -->
 
@@ -150,7 +150,7 @@ Before attending the HOL, you should follow these steps to prepare your environm
 
     ![The Protected mode is set to Turn on Protected mode.](images/Setup/image15.png "Protected mode button")
 
-11. In the URL address window enter the below URL and hit the Enter key. This will download the class files (in a .zip format) needed for the remaining labs: <https://cloudworkshop.blob.core.windows.net/operations-management-suite/StudentFiles.zip>.
+11. In the URL address window enter the below URL and hit the Enter key. This will download the class files (in a .zip format) needed for the remaining labs: https://cloudworkshop.blob.core.windows.net/operations-management-suite/StudentFiles.zip
 
     >**Note**: In some Azure VM images, the image is configured so that downloads are disabled. To enable the download of the Student Files, go to Internet Options, select the Security Tab, and on the Internet Zone select \"Custom Level\". Then scroll down to the Downloads section and select the radio button for Enable in the File Download subsection.
 
