@@ -133,7 +133,9 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![Screenshot of the Import blade with fields set to the previously defined settings.](images/Lab-guide/image29.png "Import blade")
 
-4. After importing the .ps1 files, select the **CloudShopSQL** DSC Configuration. Then, select **Compile** on the toolbar (*click **Yes** on the overwrite prompt*). Do the same for **CloudShopWeb.**
+4. After importing the .ps1 files, select the **CloudShopSQL** DSC Configuration. Then, select **Compile** on the toolbar (*click **Yes** on the overwrite prompt*). 
+   
+5. Repeat the same for **CloudShopWeb.**
 
     ![The name field is set to CloudShopSQL in the Automation Account blade.](images/Lab-guide/image30.png "Automation Account blade")
 
@@ -141,7 +143,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![In the Compile DSC Configuration box, the Yes button is selected.](images/Lab-guide/image32.png "Compile DSC Configuration box")
 
-5. Make sure to review the DSC configurations to ensure they have completed the compile prior to moving on to the next step
+6. Make sure to review the DSC configurations to ensure they have completed the compile prior to moving on to the next step
 
     ![Screenshot of the Configuration blade.](images/Lab-guide/image33.png "Configuration blade")
 
@@ -256,13 +258,11 @@ In this exercise, you will run a template deployment using an ARM template provi
     - Web AV Set Name: **webAVSet**
 
 
-11. Once completed, choose the **I agree to the terms and conditions stated above,** and the **Pin to Dashboard** followed by **Purchase**
+11. Once completed, choose the **I agree to the terms and conditions stated above,** and then followed by **Purchase**
 
     ![The Pin to dashboard checkbox and Purchase button are selected in the Terms and Conditions section.](images/Lab-guide/image42.png "Terms and Conditions section")
 
-12. A Deployment tile will appear on your **My Dashboard**. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
-
-    ![Screenshot of the Deployment tile.](images/Lab-guide/image43.png "Deployment tile")
+12. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
 
     > **Note**: Wait for the Deployment to successfully complete prior to moving on to the next steps.
 
@@ -276,7 +276,7 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     ![The DNS name is selected in the HackathonPublicIP blade.](images/Lab-guide/image45.png "HackathonPublicIP blade")
 
-16. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Azure Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**.
+16. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Azure Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**. Give it a few mintues to load the page. You can also paste the public IP of the hackathonPublicIP in the browser side by side to load the application.
 
 17. When the page loads, the CloudShop application should appear, and it will show which VM is serving the web page. In this screen capture, we see it is running on **WEBVM2**.
 
@@ -511,11 +511,11 @@ The next step is to provision the Azure security and Azure management components
 
 3. Select **Start trial** if present (your subscription may already be enabled for Standard).
 
-4. Close the panel and navigate back to the **Security Center Overview** screen. Click on **Security policy** under the **General** section. Review the policy options that can be automatically applied to your subscription.
+4. Close the panel and navigate back to the **Security Center Overview** screen. Click on **Security policy** under the **Policy & Compliance** section. Review the policy options that can be automatically applied to your subscription.
 
 5. Click on **Recommendations** on the left navigation. Note the different options and the **SECURE SCORE IMPACT**. This lets you know the impact of the changes on your overall security score (the higher the better).
 
-6. Click the option for **Install monitoring agent on your machines**. On the next screen, click **Enable** to turn on automatic provision of the monitoring agent. 
+6. Click the option for **Install monitoring agent on your Virtual machines**. On the next screen, click **Install agents** to turn on automatic provision of the monitoring agent. 
 
 7. On the next screen, accept the default workspace configuration and click **Save** to enable monitoring. This will automatically install the agent on any new or existing virtual machines in the subscription. 
 
@@ -1208,7 +1208,6 @@ In this section, you will take your monitoring solution mobile by installing and
 
 6. Once you are logged into the app, navigate to the Notifications menu to see there are currently no notifications
 
-    ![Notifications screen screenshot.](images/Lab-guide/image174.png "Notifications screen")
 
 7. Putting the phone aside for a moment, in your desktop web browser, navigate to the **Virtual Machines** list in the Azure portal
 
