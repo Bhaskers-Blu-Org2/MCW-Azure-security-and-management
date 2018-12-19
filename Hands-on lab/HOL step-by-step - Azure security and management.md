@@ -266,8 +266,6 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 11. Once completed, choose the **I agree to the terms and conditions stated above,** and then followed by **Purchase**
 
-    ![The Pin to dashboard checkbox and Purchase button are selected in the Terms and Conditions section.](images/Lab-guide/image42.png "Terms and Conditions section")
-
 12. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
 
     > **Note**: Wait for the Deployment to successfully complete prior to moving on to the next steps.
@@ -278,7 +276,7 @@ In this exercise, you will run a template deployment using an ARM template provi
     
     In the **AppGWVnet blade,** in settings area select **peering**  
     
-    At the top select +Add and complete the form below
+    At the top select **+Add** and complete the form below
 
     Name - **PeeringtoHackathon**
 
