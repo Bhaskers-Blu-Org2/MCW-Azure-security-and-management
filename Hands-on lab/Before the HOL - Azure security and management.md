@@ -102,7 +102,6 @@ Before attending the HOL, you should follow these steps to prepare your environm
 
 7.  Leave the other settings at their default values, and select **OK**, then choose **Create** on the Summary blade. The deployment should begin provisioning. It may take 10+ minutes for the virtual machine to complete provisioning.
 
-    ![The Submitting deployment for Visual Studio Community button displays.](images/Setup/image7.png "Submitting deployment button")
 
 8.  Once the deployment is complete, move on to the next exercise.
 

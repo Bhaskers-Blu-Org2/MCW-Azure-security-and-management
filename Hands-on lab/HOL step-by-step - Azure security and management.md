@@ -62,7 +62,7 @@ Per Roberto Milian, VP of Development and IT Operations - "Contoso's primary con
 
 ## Solution architecture
 
-![The Proof of Concept Solution diagram includes Cloud Shop Application and Azure Management and Monitoring.](images/Lab-guide/image2.png "Proof of Concept Solution diagram")
+![The Proof of Concept Solution diagram includes Cloud Shop Application and Azure Management and Monitoring.](images/Lab-guide/image00.png "Proof of Concept Solution diagram")
 
 ## Exercise 1: Configure Azure automation
 
@@ -254,8 +254,14 @@ In this exercise, you will run a template deployment using an ARM template provi
     - HOL VM2 Admin Password: **demo\@pass123**
 
     - HOL VM2 Windows OS Version: **2016-Datacenter**
+  
+    - Application Gateway Size : **Leave Default**
+  
+    - Capacity : ** Leave Detault**
 
     - Web AV Set Name: **webAVSet**
+  
+  **Note: Complete rest of this custom deployment form's required filed**
 
 
 11. Once completed, choose the **I agree to the terms and conditions stated above,** and then followed by **Purchase**
@@ -268,107 +274,85 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly...
 
-14. In the Azure Portal, open the **HOLRG,** and locate the Public IP Address **hackathonPublicIP**. Click on the blade to open.
+14. In the Azure Portal, Open the **AppGWVnet** and create a VNet Peering with **hackathonVnet** following the steps below:
+    
+    In the **AppGWVnet blade,** in settings area select **peering**  
+    
+    At the top select +Add and complete the form below
 
-    ![In the Azure Portal, in the Search results list, hackathonPublicIP is selected.](images/Lab-guide/image44.png "Azure Portal")
+    Name - **PeeringtoHackathon**
 
-15. On the **hackathonPublicIP** blade, locate the DNS Name you provided during the template deployment. If you hover your mouse over the name, you can **click to copy** the name to the clipboard. Paste this into your Notepad document you opened earlier.
+    Virtual Network - **hackathonVNet**
 
-    ![The DNS name is selected in the HackathonPublicIP blade.](images/Lab-guide/image45.png "HackathonPublicIP blade")
+    Configuration - Select **Allow forwarded Traffi and Allow Gateway Transit**
 
-16. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Azure Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**. Give it a few mintues to load the page. You can also paste the public IP of the hackathonPublicIP in the browser side by side to load the application.
+**Repeat the same steps to create peering from hackathonVnet to AppGWVnet**
 
-17. When the page loads, the CloudShop application should appear, and it will show which VM is serving the web page. In this screen capture, we see it is running on **WEBVM2**.
+15. In the Azure Portal, open the **HOLRG,** and locate the Public IP Address **PublicIP1**. Click on the blade to open.
+
+16. On the **PublicIP1** blade, locate the DNS Name. If you hover your mouse over the name, you can **click to copy** the name to the clipboard. Paste this into your Notepad document you opened earlier.
+
+17. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Azure Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**. Give it a few mintues to load the page. You can also paste the public IP in the browser side by side to load the application.
+
+18. When the page loads, the CloudShop application should appear, and it will show which VM is serving the web page. In this screen capture, we see it is running on **WEBVM2**.
 
     ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM2 virtual machine name.](images/Lab-guide/image46.png "Cloud Shop webpage")
 
-18. By pressing **F5** on your keyboard, you can refresh the website until you see that **WEBVM1** is also serving webpages
+19. By pressing **F5** on your keyboard, you can refresh the website until you see that **WEBVM1** is also serving webpages
 
     ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM1 virtual machine name.](images/Lab-guide/image47.png "Cloud Shop webpage")
 
 ### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
 
-Now that the deployment and the application is up and running, the next step is to allow RDP to the Web Servers. This will be accomplished by building NAT Rules through the Azure Load Balancer.
+Now that the deployment and the application is up and running, the next step is to allow RDP to the Web Servers.
+Two way you can achieve this. 
 
-1. Open the **HOLRG** Resource Group and locate **loadBalancer1**. Click to open its administration blade.
+Step #1. You can either create a VM as a jump box in the same vnet where you have web servers and RDP from that new VM to the Web Servers. Or
+    
+Step #2. You can create a Public IP and attach that Public IP to the WebServer1 so that it will allow you to RDP to that Box.  Then you will be able to RDP from Webserver 1 to the Web Server 2 or you can create another public IP and attach it to the web server 2 and RDP to that Box. 
+Instructions Below will show you step by step process to create a Public IP and attach that to Web Server 1
 
-    ![In the Resource group blade, under Name, loadBalancer1 is selected.](images/Lab-guide/image48.png "Resource group blade")
+1. Got to Create a Resource - Type Public IP Address and complete the blade with the following information
 
-2. On the **loadBalancer1** blade, locate **Inbound NAT rules in Settings**
+    Name : Webserver1PublicIP
 
-    ![In the LoadBalancer 1 blade, under Settings, Inbound NAT rules is selected.](images/Lab-guide/image49.png "LoadBalancer 1 blade")
+    SKU : **Basic**
 
-3. Click **+Add,** and complete the blade using the following information:
+    IP Version: **IPv4**
 
-    - Name: **rdp-webvm1**
+    IP Address Assignment: **Dynamic**
 
-    - Frontend IP Address: **accept default**
+    DNS Name label: **Put unique DNS Prefix**
 
-    - Service: **RDP**
+    Resource Group - **HOLRG**
 
-    - Port: **3389**
+    Location - **Same location of your web server.**
+    
+    Select **Create** to create the IP
 
-    - Associated to: **webavset**
+2. Once Created, open the **Webserver1PublicIP** blade and associate it with Web Server 1 Network Interface.
 
-    - Target: **Choose a virtual machine: WEBVM1**
+    ![Public IP Association.](images/Lab-guide/publicipassociate.png "Public IP blade")
 
-    - Network IP configuration: **ipconfig1 (10.0.0.4)**
+    ![The Connect button is selected in the Virtual machine blade.](images/Lab-guide/publicipassociate2.png "Public IP Association with VM Nic ")
 
-    - Port mapping: **Default**
-
-    ![Add inbound NAT rule blade fields are set to the previously defined settings.](images/Lab-guide/image50.png "Add inbound NAT rule blade")
-
-4. The portal will give a notice that it is: **"Saving load balancer inbound NAT rule**". Wait until this completes before continuing.
-
-    ![Screenshot of the Saving load balancer inbound NAT rule notice.](images/Lab-guide/image51.png "Saving load balancer inbound NAT rule notice")
-
-    ![Screenshot of the Saved load balancer inbound NAT rule message.](images/Lab-guide/image52.png "Saved load balancer inbound NAT rule message")
-
-5. Click **+Add,** and complete the blade using the following information:
-
-    - Name: **rdp-webvm2**
-
-    - Frontend IP Address: **accept default**
-
-    - Service: **RDP**
-
-    - Port: **3390**
-
-    - Target **Choose a virtual machine: WEBVM2**
-
-    - Network IP configuration: **ipconfig1 (10.0.0.5)**
-
-    - Port mapping: **Custom**
-
-    - Floating IP: **Disabled**
-
-    - Target Port: **3389**
-
-    ![Add inbound NAT rule blade fields are set to the previously defined settings.](images/Lab-guide/image53.png "Add inbound NAT rule blade")
-
-6. The portal will give a notice that it is: **"Saving load balancer inbound NAT rule**". Wait until this completes before continuing.
-
-    ![Screenshot of the Saving load balancer inbound NAT rule notice.](images/Lab-guide/image51.png "Saving load balancer inbound NAT rule notice")
-
-    ![Screenshot of the Saved load balancer inbound NAT rule message.](images/Lab-guide/image54.png "Saved load balancer inbound NAT rule message")
-
-7. To verify the new NAT Rules are working, move back to the **HOLRG** in the Azure portal. Select **WEBVM1,** and the **Connect** Link should now be available. Select **Connect**.
+3. In the Azure portal. Select **WEBVM1,** and the **Connect** Link should now be available. Select **Connect**.
 
     ![The Connect button is selected in the Virtual machine blade.](images/Lab-guide/image55.png "Virtual machine blade")
 
-8. On the 'Connect to virtual machine' blade, check the **RDP** tab is selected and choose **Download RDP File**
+4.  On the 'Connect to virtual machine' blade, check the **RDP** tab is selected and choose **Download RDP File**
 
     ![The Download RDP File button is highlighted on the RDP tab of the Connect to virtual machine blade](images/Lab-guide/image55b.png "Connect to virtual machine blade")
   
-8. Select **Open** when the RDP file downloads
+5.  Select **Open** when the RDP file downloads
 
     ![The Open button is selected in the Open or Save message.](images/Lab-guide/image56.png "Open or Save option")
 
-9. You will get a warning about the publisher of the RDP file being unknown. Select **Don't ask me again for connections to this computer** and click **Connect.**
+6.  You will get a warning about the publisher of the RDP file being unknown. Select **Don't ask me again for connections to this computer** and click **Connect.**
 
     ![In the Remote Desktop Connection dialog box, the Don\'t ask me again checkbox and the Connect button are both selected.](images/Lab-guide/image57.png "Remote Desktop Connection dialog box")
 
-10. When prompted by Windows Security, enter your credentials:
+7.  When prompted by Windows Security, enter your credentials:
 
     - User Name: **demouser**
 
@@ -376,33 +360,33 @@ Now that the deployment and the application is up and running, the next step is 
 
     ![Screenshot of the Windows Security prompt.](images/Lab-guide/image58.png "Windows Security prompt")
 
-11. A warning will appear stating: **The identity of the remote computer cannot be verified. Do you want to connect anyway?** Select the checkbox for the disclaimer: **Don't ask me again for connection to this computer.** Then, select **Yes**.
+8.  A warning will appear stating: **The identity of the remote computer cannot be verified. Do you want to connect anyway?** Select the checkbox for the disclaimer: **Don't ask me again for connection to this computer.** Then, select **Yes**.
 
     ![The Remote Desktop Connection warning dialog box displays with the Don\'t ask me again checkbox and the Yes button selected.](images/Lab-guide/image59.png "Remote Desktop Connection warning dialog box ")
 
 NOTE: When connecting to machines during this lab for the first time, you may encounter the same warnings etc. Follow these same steps to no longer receive those warnings as they do not apply to our setup.
 
-12. When logging on for the first time, you will see a prompt on the right asking about network discovery. Select **No**.
+9. When logging on for the first time, you will see a prompt on the right asking about network discovery. Select **No**.
 
 	![The No button is selected in the Networks prompt.](images/Setup/image10.png "Networks prompt")
 
-13. Notice the Server Manager opens by default. On the left, select **Local Server**
+10. Notice the Server Manager opens by default. On the left, select **Local Server**
 
     ![Screenshot of the Local Server option.](images/Setup/image11.png "Local Server option")
 
-14. On the right side of the pane, select **On** by **IE Enhanced Security Configuration**
+11. On the right side of the pane, select **On** by **IE Enhanced Security Configuration**
 
     ![The IE Enhanced Security Configuration is set to On.](images/Setup/image12.png "IE Enhanced Security Configuration setting")
 
-15. Change to **Off** for Administrators and select **OK**
+12. Change to **Off** for Administrators and select **OK**
 
     ![Screenshot of the Internet Explorer Enhanced Security Configuration dialog box.](images/Setup/image13.png "Internet Explorer Enhanced Security Configuration dialog box")
 
-16. In the lower left corner, select the **Windows** button to open the **Start Screen**. Then, **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by selecting **OK**.
+13. In the lower left corner, select the **Windows** button to open the **Start Screen**. Then, **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by selecting **OK**.
 
     ![Screenshot of the Internet Explorer 11 security settings dialog box with Use recommended settings selected.](images/Setup/image14.png "Internet Explorer 11 security settings dialog box")
 
-17. Leave your RDP Session to **WEBVM1** open and minimized. Then, repeat this same procedure for **WEBVM2**.
+14. Leave your RDP Session to **WEBVM1** open and minimized. Then, repeat this same procedure for **WEBVM2**.
 
 ### Task 3: Configure diagnostics accounts for the VMs
 
