@@ -494,7 +494,7 @@ sponsorship and buy in will be important to the success of the solution.
     Contoso's leaders, described as the "end-to-end" view of the e-commerce
     applications into Azure IaaS.
 
-    ![The Proof of Concept Solution diagram includes Cloud Shop Application, and Azure Management and Monitoring.](images/image3.png "Proof of Concept Solution diagram")
+    ![The Proof of Concept Solution diagram includes Cloud Shop Application, and Azure Management and Monitoring.](images/image00.png "Proof of Concept Solution diagram")
 
 *Address the following customer requirements*
 
@@ -527,7 +527,10 @@ sponsorship and buy in will be important to the success of the solution.
        application configurations. This is a fully automated install and
        configuration management solution leveraging DevOps principles.
        Deployment can be done via the Portal, Visual Studio, PowerShell or the
-       Azure CLI leveraging a Source Control Platform such as GitHub.
+       Azure CLI leveraging a Source Control Platform such as Azure DevOps, GitHub etc. 
+
+       Using **Azure DevOps** as a Source Control solution, provides the ability to automate and deploy their VMs in a repeatable manor, without human interaction. Azure DevOps will be used as managed CI/CD to deploy code / template. All subsequent updates to the systems will be made by checking the template through Azure DevOps, making changes, testing them thoroughly and then deploy the updated template
+ 
 
         ![The DevOps - People, Process, Tools diagram has the following steps: Developers, Code Repository, Build, Test, Deploy, Contoso App, and Monitor and Improve.](images/image4.png "DevOps - People, Process, Tools diagram")
 
