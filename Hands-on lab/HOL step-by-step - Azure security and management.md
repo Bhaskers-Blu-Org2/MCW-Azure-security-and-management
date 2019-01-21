@@ -290,7 +290,7 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 16. On the **PublicIP1** blade, locate the DNS Name. If you hover your mouse over the name, you can **click to copy** the name to the clipboard. Paste this into your Notepad document you opened earlier.
 
-17. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Azure Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**. Give it a few mintues to load the page. You can also paste the public IP in the browser side by side to load the application.
+17. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**. Give it a few mintues to load the page. You can also paste the public IP in the browser side by side to load the application.
 
 18. When the page loads, the CloudShop application should appear, and it will show which VM is serving the web page. In this screen capture, we see it is running on **WEBVM2**.
 

@@ -9,7 +9,7 @@ Before the hands-on lab setup guide
 </div>
 
 <div class="MCWHeader3">
-December 2018
+January 2019
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -90,17 +90,13 @@ Before attending the HOL, you should follow these steps to prepare your environm
 
     -   Location: **Choose the closest Azure region to you**.
 
-    ![Fields in the Basics blade are set to the previously defined settings.](images/Setup/image5.png "Basics blade")
-
 5.  Choose the **DS2\_V2 or D2S\_V3 Standard** instance size on the Size blade. Use the 'Search' filter to help find the size you need.
 
     ![The Choose a size blade displays](images/Setup/image6.png "Choose a size blade")
 
-6.  On the Settings blade, open the **Select public inbound ports** drop-down (if shown) and select **RDP**.
+6.  On the Inbound Port Rules section, Choose the **Allow Selected ports** drop-down (if shown) and select **RDP**.
     
-    ![The select public inbound ports drop down, with RDP selected](images/Setup/image6b.png "Select public inbound ports drop-down ")
-
-7.  Leave the other settings at their default values, and select **OK**, then choose **Create** on the Summary blade. The deployment should begin provisioning. It may take 10+ minutes for the virtual machine to complete provisioning.
+7.  Leave the other settings at their default values, and select **Review + Create** on the Summary blade. The deployment should begin provisioning. It may take 10+ minutes for the virtual machine to complete provisioning.
 
 
 8.  Once the deployment is complete, move on to the next exercise.
