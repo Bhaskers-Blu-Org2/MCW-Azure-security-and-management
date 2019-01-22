@@ -286,20 +286,6 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 **Repeat the same steps to create peering from hackathonVnet to AppGWVnet**
 
-15. In the Azure Portal, open the **HOLRG,** and locate the Public IP Address **PublicIP1**. Click on the blade to open.
-
-16. On the **PublicIP1** blade, locate the DNS Name. If you hover your mouse over the name, you can **click to copy** the name to the clipboard. Paste this into your Notepad document you opened earlier.
-
-17. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**. Give it a few mintues to load the page. You can also paste the public IP in the browser side by side to load the application.
-
-18. When the page loads, the CloudShop application should appear, and it will show which VM is serving the web page. In this screen capture, we see it is running on **WEBVM2**.
-
-    ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM2 virtual machine name.](images/Lab-guide/image46.png "Cloud Shop webpage")
-
-19. By pressing **F5** on your keyboard, you can refresh the website until you see that **WEBVM1** is also serving webpages
-
-    ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM1 virtual machine name.](images/Lab-guide/image47.png "Cloud Shop webpage")
-
 ### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
 
 Now that the deployment and the application is up and running, the next step is to allow RDP to the Web Servers.
@@ -525,7 +511,7 @@ In this section, you will add Service Map to Log Analytics.
 
     ![In the Monitoring and Management blade, in the search results, Service Map is selected.](images/Lab-guide/image84.png "Monitoring and Management blade")
 
-4. Select the OMS Workspace you created and check the **Pin to dashboard** before selecting **Create**
+4. Select the OMS Workspace you created and click **Create**
 
     ![Screenshot of the Service Map blade.](images/Lab-guide/image85.png "Service Map blade")
 
@@ -599,7 +585,7 @@ The Update Management functionality will be configured through your Virtual Mach
 
 9. Click on **Schedule update deployment**. The portal shows the 'New update deployment' blade, where you can choose which updates to deploy (based on classification), which to exclude (based on KnowledgeBase ID), when to deploy, and the duration of the maintenance window (updates not deployed within 20 minutes of the end of this time window are omitted so the VM can reboot.)
 
-     ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image186.png "New update deployment")
+     ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image186.png "New update deployment for WebVM1")
 
     Review the update settings, but do *not* configure an update deployment (to save time during the lab). Close the New update deployment blade.
 
@@ -608,13 +594,6 @@ The Update Management functionality will be configured through your Virtual Mach
      ![Screenshot of the Log Analytics Update Managemnent experience. The VMs we have created are listed, together with metrics showing the number of updates pending/failed.](images/Lab-guide/image188.png "Update Management experience")
 
     > **Note**: It may take several minutes before data is shown in this view.
-
-11. Select **New update deployment** brings a similar update deployment blade, except in this case you can configure the update deployment to be either Windows or Linux (previously the OS was inferred from the VM), and select which VMs will be updated (previously the blade applied only to a single VM).
-
-    ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image187.png "New update deployment")
-
-    Updating VMs via this Log Analytics experience enables central management of updates.
-    
 
 ### Task 6: Configure Inventory Tracking and Change Management
 
