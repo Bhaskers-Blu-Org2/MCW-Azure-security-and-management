@@ -89,7 +89,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     c. Location: **East US 2** or **West Europe**
 
-    NOTE: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you.Leave the run as account state as default.
+    NOTE: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you. Leave the run as account state as default.
 
     ![Fields in the Add Automation Account blade are set to the previously defined settings.](images/Lab-guide/image22.png "Add Automation Account blade")
 
@@ -121,7 +121,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 ### Task 3: Upload DSC configurations into automation account
 
-1. Select **Resource groups \> HOLRGAUTO \> Automation-Acct** and click **State Configurations (DSC) in Configuration Management** then select **configuration** then selet **Add**
+1. Select **Resource groups \> HOLRGAUTO \> Automation-Acct** and click **State Configurations (DSC) in Configuration Management** then select **configuration** then select **Add**
 
     ![Screenshot of the Automation Account blade.](images/Lab-guide/image27.png "Automation Account blade")
 
@@ -280,7 +280,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     Virtual Network - **hackathonVNet**
 
-    Configuration - Select **Allow forwarded Traffi and Allow Gateway Transit**
+    Configuration - Select **Allow forwarded Traffic and Allow Gateway Transit**
+
+15. In the Azure Portal, go to Resource Group - HOLRG - select and click to open **PublicIP1**. Select **Configuration** in settings area and put a DNS name level **cloudshop-XXXX**(X represents unique numbers to make sure it is unique)
 
 **Repeat the same steps to create peering from hackathonVnet to AppGWVnet**
 
@@ -490,7 +492,7 @@ The next step is to provision the Azure security and Azure management components
 9. Next, click on the **Recommendations** tab again and remediate the **Install endpoint protection solution on virtual machines** recommendation by clicking on it and following the directions to install Endpoint Protection on all of the virtual machines **except LabVM**.
     > **Note**: You can accept the default configuration options for Microsoft Endpoint protection. 
 
-10. You will explore Azure Security Center more later in this lab, including configuring alerts and preventative maintenence.
+10. You will explore Azure Security Center more later in this lab, including configuring alerts and preventative maintenance.
 
 
 ### Task 3: Add Service Map
@@ -745,7 +747,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
     ![Screenshot showing clicks for HOLCloudShop (1) and Application map (2).](images/Lab-guide/image112.png "Open HOLCloudShop Application Map")
 
 
-3. Take a few minutes to explore the Application map. Click on each node in the application map, and look at the data available.
+3. Take a few minutes to explore the Application map. Click on each node in the application map and look at the data available.
 
 	![Screenshot of the Application Map.](images/Lab-guide/image114.png "Application Map")
 
@@ -775,7 +777,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     ![Alert settings for CloudShopProcessorAlert display.](images/Lab-guide/image118.png "Alert settings")
 
-7. In your **HOLRG,** locate the **hackathonPublicIP** Public IP Address, take note of the DNS name which is on the front of the Azure Load Balancer for the CloudShop App running on **WEBVM1** & **WEBVM2**
+7. In your **HOLRG,** locate the **PublicIP** Address, take note of the DNS name which is on the front of the Layer seven load balancer Application Gateway for the CloudShop App running on **WEBVM1** & **WEBVM2**
 
 8. Next in the **HOLCloudShop** Application Insights workspace, under the **Investigate** section, select **Availability**
 
@@ -787,7 +789,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     - Test type: **URL Ping Test**
 
-    - URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
+    - URL: **http://cloudshop-XX.southcentralus.cloudapp.azure.com**
 
     - Test locations: Choose locations from all over the world
 
@@ -809,7 +811,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     - Test Type: Manual Test
 
-    - URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
+    - URL: **http://cloudshop-XXX.southcentralus.cloudapp.azure.com**
 
     ![Fields in the Configure test using blade are set to the previously defined settings.](images/Lab-guide/image122.png "Configure test using blade")
 
@@ -871,7 +873,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 1. Move to your **HOLRG** Resource group and stop both **WEBVM1** and **WEBVM2**
 
-2. Navigate back to the **HOLCloudShop** Application Insights portal. Select **Availability**, and notice that the availability tests have start to fail once the web VMs are stopped.
+2. Navigate back to the **HOLCloudShop** Application Insights portal. Select **Availability** and notice that the availability tests have start to fail once the web VMs are stopped.
 
     ![On the Application Insights blade, the Availability blade shows the web tests failing](images/Lab-guide/image134.png "Application Insights Availability blade")
 
@@ -1024,7 +1026,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
     ```
     Click **Run**.
 
-    This query uses security events (only available when using the Standard tier of Security Center) to identify how often each process was run in the past 3 days, and then calcualtes the most commonly run processes. For more information, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/top-5-running-processes-in-the-last-3-days.md>.
+    This query uses security events (only available when using the Standard tier of Security Center) to identify how often each process was run in the past 3 days, and then calculates the most commonly run processes. For more information, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/top-5-running-processes-in-the-last-3-days.md>.
 
 ### Task 2: Preventive maintenance using Security Center
 
@@ -1103,7 +1105,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![+ Add Criteria is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167d.png "Add criteria screenshot")
 
-6. In the 'Configure signal logic' blade, open the **Monitor service** drop-down and select **Activity Log - Administrative**. In the search field, enter **deallocate**. Click on **Deallocate Virtual Machine (virtualMachines)**.
+6. In the 'Configure signal logic' blade, open the **Monitor service** drop-down and select **Activity Log - Administrative**. In the search field, enter **deallocate**. Click on **Deallocate Virtual Machine (VirtualMachines)**.
 
     ![Screenshot showing the 'Configure signal logic' blade, with selections matching the preceeding text.](images/Lab-guide/image167e.png "'Configure signal logic' screenshot")
 
