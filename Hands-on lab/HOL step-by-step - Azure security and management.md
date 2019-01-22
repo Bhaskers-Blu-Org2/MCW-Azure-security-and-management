@@ -187,9 +187,7 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     ![The Load file button is selected in teh Edit template blade.](images/Lab-guide/image39.png "Edit template blade")
 
-8. In the Choose File to Upload dialog, navigate to the **C:\\HOL** folder, and locate the **OMSHacakthon-azuredeploy.json** file
-
-    ![Screenshot of the Choose File to Upload dialog box with the previously mentioned path expanded.](images/Lab-guide/image40.png "Choose File to Upload dialog box")
+8. In the Choose File to Upload dialog, navigate to the **C:\\HOL** folder, and locate the **OMSHacakthon-azuredeployappgw.json** file
 
 9. The JSON file will now be in the text window and the Parameters, Variables, and Resources should load in the Window. Select **Save**.
 
