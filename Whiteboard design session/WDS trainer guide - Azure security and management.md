@@ -220,9 +220,9 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 3.  Contoso needs a full infrastructure monitoring and management solution containing the following abilities. It is important that all of the machine data be captured and searchable by their teams. Software Update Management is an area that needs to be addressed, as patches need to be distributed in timely manner. Contoso needs a tool to determine where they stand if an outbreak or issue occurs. Also, whenever there is a system outage or the problem question comes up "what changed", the solution should be able to provide that type of information to the SOC. Security is a must in the cloud age, so Contoso needs a great dashboard and set of solutions that can help them understand the current status of their deployment and capture all logs in case of a breach. All of this together needs to allow for the creation of customer alerts Contoso can build on their own. They want these alerts to be flexible based on real machine data, emails to the trouble-ticket system and notifications sent to smartphones. These notifications should be accompanied by a professional mobile application not just the ability to log into a webpage from a smartphone. Finally, the customer has a huge SQL Server footprint with more than 150 applications relying on the DBMS. The solution should proactively provide feedback about the SQL Servers to help Contoso to correct known errors that Microsoft should correct on all SQL Servers.
 
-4.  Contoso is also looking for an Application Monitoring Solution that can provide end-to-end monitoring and visibility of their applications. It needs to allow the team to drill into the data and determine which pieces of the application are not performing well including the dependences such as the SQL Server and any queries that are running in the background. They also need to have a web monitoring solution providing up/down tests from spots all over the globe and the ability to tell them when the application is not performing as expected. Performance testing is something they have lacked for a long time, but they have a good understanding of the applications in their current deployments. Contoso needs the ability to perform simple performance tests that will help them benchmark and size their VMs without having to run a bunch of code or invest in expensive tools or consultants. One final aspect that is important to Contoso is the ability to create Application Layer Alerts which need to show up in the portal. Also, the Application Management Solution needs to integrate with the Management and Monitoring solution. This means that all of the data from Application Performance Management (APM) should flow into the other management system.
+4.  Contoso is also looking for an Application Monitoring Solution that can provide end-to-end monitoring and visibility of their applications. It needs to allow the team to drill into the data and determine which pieces of the application are not performing well including the dependencies such as the SQL Server and any queries that are running in the background. They also need to have a web monitoring solution providing up/down tests from spots all over the globe and the ability to tell them when the application is not performing as expected. Performance testing is something they have lacked for a long time, but they have a good understanding of the applications in their current deployments. Contoso needs the ability to perform simple performance tests that will help them benchmark and size their VMs without having to run a bunch of code or invest in expensive tools or consultants. One final aspect that is important to Contoso is the ability to create Application Layer Alerts which need to show up in the portal. Also, the Application Management Solution needs to integrate with the Management and Monitoring solution. This means that all of the data from Application Performance Management (APM) should flow into the other management system.
 
-5.  Contoso are concerned about the potential complexity of having separate monitoring solutions for infrastructure and applications. They are looking for an integrated approach that offers consistency for log search, alerting, analytics and dashboarding across all of their monitoring and diagnostics data.
+5.  Contoso are concerned about the potential complexity of having separate monitoring solutions for infrastructure and applications. They are looking for an integrated approach that offers consistency for log search, alerting, analytics and dash boarding across all of their monitoring and diagnostics data.
 
 ### Customer objections 
 
@@ -230,7 +230,7 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 2.	They believe Microsoft does their best for securing the Azure network, but they are very unsure how to detect when hackers are attacking their system. How will Microsoft's solution ensure we have visibility into our security posture?
 
-3.	SQL Server is used extensively in their application eco-system. Contoso is concerned about proper configuration, and they are worried SQL may not perform adequately on VMs in Azure. The system needs to provide feedback on proper configurations with the ability to drill down into how the system is performing, even down to the query level, showing dependences and their ASP.NET applications.
+3.	SQL Server is used extensively in their application eco-system. Contoso is concerned about proper configuration, and they are worried SQL may not perform adequately on VMs in Azure. The system needs to provide feedback on proper configurations with the ability to drill down into how the system is performing, even down to the query level, showing dependencies and their ASP.NET applications.
 
 4.	Contoso are concerned about the administrative controls. They would like to ensure that only approved administrators have access to manage virtual machines.
 
@@ -248,7 +248,7 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format.
 
-Timeframe: 60 minutes
+Time frame: 60 minutes
 
 **Business needs**
 
@@ -273,7 +273,7 @@ Directions: With all participants at your table, respond to the following questi
 *Address the following customer requirements*
 
 1.  How can you deliver a single consistent experience for log search, alerting,
-    analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+    analytics and dash boarding across all of Contoso's monitoring and diagnostics data?
 
 2.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
@@ -323,7 +323,7 @@ Prepare a 15-minute chalk-talk style presentation to the customer.
 
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Timeframe: 30 minutes
+Time frame: 30 minutes
 
 **Presentation**
 
@@ -345,7 +345,7 @@ Directions:
 
 ##  Wrap-up 
 
-Timeframe: 15 minutes
+Time frame: 15 minutes
 
 Directions: Tables reconvene with the larger group to hear the facilitator/SME share the preferred solution for the case study.
 
@@ -378,7 +378,7 @@ Directions: Tables reconvene with the larger group to hear the facilitator/SME s
 
 -   Ask, "What questions do you have about the customer case study?"
 
--   Briefly review the steps and timeframes of the whiteboard design session.
+-   Briefly review the steps and time frames of the whiteboard design session.
 
 -   Ready, set, go! Let the table participants begin.
 
@@ -498,7 +498,7 @@ sponsorship and buy in will be important to the success of the solution.
 
 *Address the following customer requirements*
 
-1.  How can you deliver a single consistent experience for log search, alerting, analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+1.  How can you deliver a single consistent experience for log search, alerting, analytics and dash boarding across all of Contoso's monitoring and diagnostics data?
 
     - [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor "Azure Monitor overview documentation page") supports ingesting logs and metrics from multiple sources. This includes application logs, diagnostic logs, and system metrics, such as CPU load, disk capacity, and network utilization. It can also ingest the Azure Activity Log, which records all Azure administrator activity.
     
@@ -874,7 +874,7 @@ sponsorship and buy in will be important to the success of the solution.
     concerned about proper configuration, and they are worried SQL may not
     perform adequately on VMs in Azure. The system needs to provide feedback on
     proper configurations with the ability to drill down into how the system is
-    performing, even down to the query level, showing dependences and their
+    performing, even down to the query level, showing dependencies and their
     ASP.NET applications.
     
     - The SQL Server Assessment that is part of Security Center can be implemented with just a few clicks by Contoso. This assessment will run once a week and the teams can stay ahead potential issues and will have step-by-step remediation’s to know problems and misconfigurations.
