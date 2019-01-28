@@ -31,6 +31,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
   - [Abstract and learning objectives](#abstract-and-learning-objectives)
   - [Overview](#overview)
   - [Solution architecture](#solution-architecture)
+  - [Requirements](#requirements)
   - [Exercise 1: Configure Azure automation](#exercise-1-configure-azure-automation)
     - [Overview](#overview-1)
     - [Task 1: Create automation account](#task-1-create-automation-account)
@@ -96,6 +97,18 @@ Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary conc
 ## Solution architecture
 
 ![The Proof of Concept Solution diagram includes Cloud Shop Application and Azure Management and Monitoring.](images/Lab-guide/image00.png "Proof of Concept Solution diagram")
+
+## Requirements
+
+- A corporate e-mail address (e.g., your @microsoft.com email).
+
+- Microsoft Azure subscription must be pay-as-you-go or MSDN
+  - Trial subscriptions will not work.
+
+- Local machine or an Azure LABVM virtual machine configured with:
+  - Visual Studio 2017 Community Edition or later
+  - Azure SDK 2.9.+ or Later for Visual Studio
+  - Azure PowerShell 4.0 or later
 
 ## Exercise 1: Configure Azure automation
 
