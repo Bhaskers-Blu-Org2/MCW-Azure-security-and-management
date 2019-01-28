@@ -84,7 +84,7 @@ At the end of this hands-on lab, you will be better able to design, implement an
 
 ## Overview
 
-Contoso Holdings is a multi-national holding company headquartered in Los Angeles, CA that owns 48 manufacturing companies located in North America, Europe and Asia. These companies sell their products primarily to either distributors or large retail organizations around the world. Contoso, as the parent company, controls the IT systems for the companies that it owns and thus runs their e-commerce based applications. There are about 125 of these e-commerce applications used primarily for business-to-business purchasing by corporate buyers. These apps provide the bulk of Contoso's 15 billion dollars in revenue per year, so they are mission critical.
+Contoso Holdings is a multi-national holding company headquartered in Los Angeles, CA that owns 48 manufacturing companies located in North America, Europe and Asia. These companies sell their products primarily to either distributors or large retail organizations around the world. Contoso, as the parent company, controls the IT systems for the companies that it owns and thus runs their e-commerce-based applications. There are about 125 of these e-commerce applications used primarily for business-to-business purchasing by corporate buyers. These apps provide the bulk of Contoso's 15 billion dollars in revenue per year, so they are mission critical.
 
 Recently Contoso has started to investigate what it would take to move from on-premises datacenters to the cloud. Most of their applications are ASP.NET running on Windows VMs with SQL Server in a traditional N-tier configuration. Their goal is to lift and shift these applications over to the cloud while gaining more control over the applications and improving their security posture.
 
@@ -120,7 +120,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 ### Task 1: Create automation account
 
-1. Browse to the Azure Portal, and authenticate at <https://portal.azure.com/>.
+1. Browse to the Azure Portal and authenticate at <https://portal.azure.com/>.
 
     ```
     http://portal.azure.com
@@ -224,7 +224,7 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 4. In the Azure Portal, select the **+Create a resource** button. In the Search box, type **Template Deployment**.
 
-5. Select **Template Deployment and** and click **Create** on the following screen.
+5. Select **Template Deployment** and click **Create** on the following screen.
 
     ![Template deployment is circled in the Everything blade.](images/Lab-guide/image37.png "Everything blade")
 
@@ -302,9 +302,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     - HOL VM2 Windows OS Version: **2016-Datacenter**
   
-    - Application Gateway Size : **Leave Default**
+    - Application Gateway Size: **Leave default**
   
-    - Capacity : ** Leave Detault**
+    - Capacity: **Leave default**
 
     - Web AV Set Name: **webAVSet**
 
@@ -433,7 +433,7 @@ In this task, you will configure the VMs to capture diagnostic data in an Azure 
 
     ![Under Performance counters, the Configure performance counters link is selected.](images/Lab-guide/image63.png "Performance counters section")
 
-5. Next check the **ASP.NET box,** and select **Save**.
+5. Next check the **ASP.NET box** and select **Save**.
 
     ![On the Performance counters tab, the ASP.NET checkbox is called out.](images/Lab-guide/image64.png "Performance counters tab")
 
@@ -883,7 +883,7 @@ To read more about this tool follow this [link](http://bit.ly/2ksdzKV).
 
     ![Screenshot of Performance under load metrics.](images/Lab-guide/image128.png "Performance under load metrics")![Screenshot of the Requests donut chart.](images/Lab-guide/image129.png "Requests graph")
 
-21. Close the Performance Test, and click on the **Performance** under **Investigate**.
+21. Close the Performance Test and click on the **Performance** under **Investigate**.
 
     ![Under Investigate, Performance (preview) is selected.](images/Lab-guide/image130.png "Investigate section")
 
@@ -1088,7 +1088,7 @@ In this section, we will use the Security Center Overview screen to review what 
 
     ![On the Apply disk encryption blade, a description is given and the virtual machines created in this lab are displayed.](images/Lab-guide/image159.png "Apply disk encryption blade")
 
-5. Close the panel and navigate back to the **Security Center Overview** page. This time, click on the **Networking** tile to drill into the security health of your networking resources.
+5. Close the panel and navigate back to the **Security Center Overview** page. This time click on the **Networking** tile to drill into the security health of your networking resources.
 
     ![Screenshot of the Networking tile.](images/Lab-guide/image160.png "Networking tile")
 
@@ -1149,7 +1149,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![Screenshot showing the 'Configure signal logic' blade, with selections matching the preceeding text.](images/Lab-guide/image167e.png "'Configure signal logic' screenshot")
 
-7. If you have recently stopped the virtual machines, you will see a history of those events, otherwise the chart will show 'No data to display'. Leave the settings at their default values, and click **Done**.
+7. If you have recently stopped the virtual machines, you will see a history of those events, otherwise the chart will show 'No data to display'. Leave the settings at their default values and click **Done**.
 
     ![Screenshot showing the 'Configure signal logic' blade, showing a chart of past 'Deallocate Virtual Machine' events. At the bottom of the screenshot, the 'Done' button is highlighted.](images/Lab-guide/image167f.png "'Configure signal logic' screenshot")
 
@@ -1209,7 +1209,7 @@ In this section, you will take your monitoring solution mobile by installing and
 
 3. Once the application has been installed, you will need to allow the application to send you notifications.
 
-4. Next, touch the Sign In Button.
+4. Next, touch the **Sign in** button.
 
     ![Screenshot of the Sign in screen.](images/Lab-guide/image173.png "Sign in screen")
 
@@ -1255,7 +1255,7 @@ Understanding what is happening within an application can be very challenging, b
 
 7. Feel free to experiment with this dashboard to understand the performance considerations of your application.
 
-8. Pin the 'Operation times' chart to to My Dashboard by clicking on the pin in the top right of the chart.
+8. Pin the 'Operation times' chart to **My Dashboard** by clicking on the pin in the top right of the chart.
 
     ![Screenshot of the Pin icon.](images/Lab-guide/image183.png "Pin icon")
 
