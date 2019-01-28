@@ -23,21 +23,54 @@ The names of manufacturers, products, or URLs are provided for informational pur
 
 Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/Usage/General.aspx> are trademarks of the Microsoft group of companies. All other trademarks are property of their respective owners
 
-## Accessing and ending the Lab Environment
+**Contents**
 
-SkillMeUp Real Time Labs use a virtual machine for all lab exercises. This allows you access to all of the tools and software needed to complete the lab without requiring you to install anything on your local computer. 
+<!-- TOC -->
 
-The virtual machine may take several minutes to fully provision due to software installation and supporting files to copy.
+- [Azure security and management hands-on lab step-by-step](#azure-security-and-management-hands-on-lab-step-by-step)
+  - [Abstract and learning objectives](#abstract-and-learning-objectives)
+  - [Overview](#overview)
+  - [Solution architecture](#solution-architecture)
+  - [Exercise 1: Configure Azure automation](#exercise-1-configure-azure-automation)
+    - [Overview](#overview-1)
+    - [Task 1: Create automation account](#task-1-create-automation-account)
+    - [Task 2: Add an Azure Automation credential](#task-2-add-an-azure-automation-credential)
+    - [Task 3: Upload DSC configurations into automation account](#task-3-upload-dsc-configurations-into-automation-account)
+    - [Summary](#summary)
+  - [Exercise 2: Build CloudShop environment](#exercise-2-build-cloudshop-environment)
+    - [Overview](#overview-2)
+    - [Task 1: Template deployment](#task-1-template-deployment)
+    - [Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules](#task-2-allow-remote-desktop-to-the-webvm1--webvm2-using-nat-rules)
+    - [Task 3: Configure diagnostics accounts for the VMs](#task-3-configure-diagnostics-accounts-for-the-vms)
+    - [Summary](#summary-1)
+  - [Exercise 3: Build and configure Azure Security Center and Azure Management](#exercise-3-build-and-configure-azure-security-center-and-azure-management)
+    - [Overview](#overview-3)
+    - [Task 1: Provision Log Analytics through Azure Monitor](#task-1-provision-log-analytics-through-azure-monitor)
+    - [Task 2: Explore Security Center](#task-2-explore-security-center)
+    - [Task 3: Add Service Map](#task-3-add-service-map)
+    - [Task 4: Configure Service Map](#task-4-configure-service-map)
+    - [Task 5: Configure Update Management](#task-5-configure-update-management)
+    - [Task 6: Configure Inventory Tracking and Change Management](#task-6-configure-inventory-tracking-and-change-management)
+    - [Summary](#summary-2)
+  - [Exercise 4: Instrument CloudShop using Azure Application Insights](#exercise-4-instrument-cloudshop-using-azure-application-insights)
+    - [Overview](#overview-4)
+    - [Task 1: Install and Configure the Application Insights Status Monitor](#task-1-install-and-configure-the-application-insights-status-monitor)
+    - [Task 2: Explore the Application Map, configure alerts, availability tests, and performance tests](#task-2-explore-the-application-map-configure-alerts-availability-tests-and-performance-tests)
+    - [Task 3: Simulate a failure of the CloudShop application](#task-3-simulate-a-failure-of-the-cloudshop-application)
+    - [Summary](#summary-3)
+  - [Exercise 5: Explore Azure Security and Operations Management, Application Insights and build a dashboard](#exercise-5-explore-azure-security-and-operations-management-application-insights-and-build-a-dashboard)
+    - [Overview](#overview-5)
+    - [Task 1: Work with Log Analytics queries](#task-1-work-with-log-analytics-queries)
+    - [Task 2: Preventive maintenance using Security Center](#task-2-preventive-maintenance-using-security-center)
+    - [Task 3: Set up an Activity Log alert](#task-3-set-up-an-activity-log-alert)
+    - [Task 4: Installing & using the Azure mobile application](#task-4-installing--using-the-azure-mobile-application)
+    - [Task 5: Application Insights](#task-5-application-insights)
+    - [Summary](#summary-4)
+  - [After the hands-on lab](#after-the-hands-on-lab)
+    - [Overview](#overview-6)
 
-After you have completed all of the lab exercises ensure you click the End Lab button to get access to your certification of completion.
+<!-- /TOC -->
 
-## Accessing Microsoft Azure
-
-Launch Chrome from the virtual machine desktop and navigate to the URL below. Your Azure Credentials are available by clicking the Cloud Icon at the top of the Lab Player.
-
-```
-https://portal.azure.com
-```
 # Azure security and management hands-on lab step-by-step
 
 ## Abstract and learning objectives 
