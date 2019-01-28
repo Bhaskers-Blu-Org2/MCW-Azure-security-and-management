@@ -91,7 +91,7 @@ They are looking for you to build out a prototype system in Azure using a sample
 
 They are looking for management tools that will allow them to have a full end-to-end view of both the infrastructure and application performance. Their goal will be to effectively lift and shift all applications over to the cloud. They do not have time or money to instrument the applications. Of course, security is on the top of the chain, so they also need a security solution and updated management system.
 
-Per Roberto Milian, VP of Development and IT Operations - "Contoso's primary concern is how to best: deploy, test, manage, monitor, patch, secure and troubleshoot these applications in Azure IaaS."
+Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary concern is how to best: deploy, test, manage, monitor, patch, secure and troubleshoot these applications in Azure IaaS."
 
 ## Solution architecture
 
