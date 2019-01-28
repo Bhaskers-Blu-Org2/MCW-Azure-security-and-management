@@ -79,7 +79,7 @@ In this hands-on lab, you will first deploy a simple web application and databas
 
 At the end of this hands-on lab, you will be better able to design, implement and use a wide range of infrastructure management systems in Azure.
 
-NOTE: The setup tasks should be completed in advance of the hands-on lab to save deployment time.
+> **Note**: The setup tasks should be completed in advance of the hands-on lab to save deployment time.
 
 ## Overview
 
@@ -122,13 +122,11 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     c. Location: **East US 2** or **West Europe**
 
-    NOTE: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you. Leave the run as account state as default.
+    > **Note**: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you. Leave the run as account state as default.
 
     ![Fields in the Add Automation Account blade are set to the previously defined settings.](images/Lab-guide/image22.png "Add Automation Account blade")
 
 5. Click **Create**
-
-
 
 ### Task 2: Add an Azure Automation credential
 
@@ -292,14 +290,14 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     - Web AV Set Name: **webAVSet**
   
-  **Note: Complete rest of this custom deployment form's required filed**
+    > **Note**: Complete the rest of this custom deployment form's required fields.
 
 
 11. Once completed, choose the **I agree to the terms and conditions stated above,** and then followed by **Purchase**
 
 12. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
 
-    > **Note**: Wait for the Deployment to successfully complete prior to moving on to the next steps.
+    > **Note**: Wait for the Deployment to successfully complete before to moving on to the next steps.
 
 13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly...
 
@@ -381,7 +379,7 @@ Instructions Below will show you step by step process to create a Public IP and 
 
     ![The Remote Desktop Connection warning dialog box displays with the Don\'t ask me again checkbox and the Yes button selected.](images/Lab-guide/image59.png "Remote Desktop Connection warning dialog box ")
 
-NOTE: When connecting to machines during this lab for the first time, you may encounter the same warnings etc. Follow these same steps to no longer receive those warnings as they do not apply to our setup.
+    > **Note**: When connecting to machines during this lab for the first time, you may encounter the same warnings etc. Follow these same steps to no longer receive those warnings as they do not apply to our setup.
 
 9. When logging on for the first time, you will see a prompt on the right asking about network discovery. Select **No**.
 
@@ -421,7 +419,7 @@ In this task, you will configure the VMs to capture diagnostic data in an Azure 
 
     ![Screenshot of the Updating diagnostics settings notification.](images/Lab-guide/image62.png "Updating diagnostics settings notification")
 
-    > Note: If you receive an error at this stage. Navigate to All Services -> Subscriptions -> Resource Providers -> and ensure the Microsoft.Insights resource provider is registered.
+    > **Note**: If you receive an error at this stage. Navigate to All Services -> Subscriptions -> Resource Providers -> and ensure the Microsoft.Insights resource provider is registered.
 
 4. Select the Configure performance counters
 
@@ -443,7 +441,7 @@ In this task, you will configure the VMs to capture diagnostic data in an Azure 
 
     ![On the Performance counters tab, the SQL Server checkbox is called out.](images/Lab-guide/image65.png "Performance counters tab")
 
-NOTE: You will need to wait for the portal to complete the updates to all VMs before moving to the next exercise.
+    > **Note**: You will need to wait for the portal to complete the updates to all VMs before moving to the next exercise.
 
 ### Summary
 
@@ -523,6 +521,7 @@ The next step is to provision the Azure security and Azure management components
 8. After a few minutes, refresh the portal and click on **Compute & Apps**. You will see the **Resolve monitoring agent health issues on your machines** move to an orange state. Click on the orange bar and you will see that this recommendation is being remediated. 
 
 9. Next, click on the **Recommendations** tab again and remediate the **Install endpoint protection solution on virtual machines** recommendation by clicking on it and following the directions to install Endpoint Protection on all of the virtual machines **except LabVM**.
+    
     > **Note**: You can accept the default configuration options for Microsoft Endpoint protection. 
 
 10. You will explore Azure Security Center more later in this lab, including configuring alerts and preventative maintenance.
@@ -558,7 +557,7 @@ For this lab, we'll install the VM extension for Service Map using the Azure CLI
 
     ![Screenshot of Cloud Shell button](images/Lab-guide/image86.png "Cloud Shell button")
 
-	NOTE: If this is your first time using the Azure Cloud Shell, you will be prompted to choose between a Bash Shell and PowerShell. Choose **Bash Shell**. Also, you will be prompted to create a storage account for use by the Cloud Shell.
+	> **Note**: If this is your first time using the Azure Cloud Shell, you will be prompted to choose between a Bash Shell and PowerShell. Choose **Bash Shell**. Also, you will be prompted to create a storage account for use by the Cloud Shell.
 
 2. The Cloud Shell will open at the bottom of the Azure portal browser window. (If a PowerShell has been selected, change to the **Bash Shell**.) In the Bash Shell window, type the following command:
 
@@ -596,7 +595,7 @@ The Update Management functionality will be configured through your Virtual Mach
 
     ![Screenshot of the Update Management window with the Enable button selected.](images/Lab-guide/image92.png "Update Management window")
 
-	NOTE: In some cases, your Log Analytics workspace may not be shown if it is located in a different region or geography. In this case, use the option provided to create a new Log Analytics workspace.
+	> **Note**: In some cases, your Log Analytics workspace may not be shown if it is located in a different region or geography. In this case, use the option provided to create a new Log Analytics workspace.
 
 4. Wait for the deployment to complete. This can take up to 15 minutes.
 
@@ -832,7 +831,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
 10. Select **Create** to crate the availability test
 
-	> **Note:** If the CloudShop Application becomes unavailable to this WebTest, you will then receive an email alert from Azure Application Insights.
+	> **Note**: If the CloudShop Application becomes unavailable to this WebTest, you will then receive an email alert from Azure Application Insights.
 
 11. Select **Performance Testing** in the **Configure** section
 
@@ -896,7 +895,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>
 
     ![Screenshot of an Azure Application Insights warning alert.](images/Lab-guide/image132.png "Azure Application Insights alert")
 
-	>**Note:** The email may take several minutes to arrive. You can proceed with the lab and check for the email later.
+	> **Note**: The email may take several minutes to arrive. You can proceed with the lab and check for the email later.
 
 24. The alert will quickly resolve as the Load Test has completed causing the CPU condition to quiet
 
@@ -958,7 +957,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
     ![Screenshot of the Log Search blade.](images/Lab-guide/image142.png "Log Search blade")
 
-    >**Note:** you may have less or more data, but keep in mind, the service has only been collecting data since you began the lab.
+    > **Note**: you may have less or more data, but keep in mind, the service has only been collecting data since you began the lab.
 
 4. Notice in the left, there are different types of data. Select **Windows Defender** followed by **Apply**.
 
@@ -1158,7 +1157,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![+ New action group is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167h.png "New action group screenshot")
 
-    NOTE: Action groups define what action is taken when an alert is fired. They are defined separately from the alert rule, so that the same action group can be re-used across multiple alerts.
+    > **Note**: Action groups define what action is taken when an alert is fired. They are defined separately from the alert rule, so that the same action group can be re-used across multiple alerts.
 
 10. Fill in the first section of the **Add action group** blade as follows:
     - Action group name: **Mobile app push notifications action group**
@@ -1180,7 +1179,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![Screenshots of the notification of the successfully created alert rule.](images/Lab-guide/image171.png "Successfully created alert rule message")
 
-    >**Note:** It may take up to 5 minutes after the alert rule is created for the alert to become active.
+    > **Note**: It may take up to 5 minutes after the alert rule is created for the alert to become active.
 
 ### Task 4: Installing & using the Azure mobile application
 
@@ -1236,7 +1235,7 @@ Understanding what is happening within an application can be very challenging, b
 
 6. This dashboard gives near real-time insight into the performance of your application. In the screenshot below, you can see this application appears to have a performance issue with the Home/Index page. It appears to be taking 20.5 seconds on average to load. 
 
-    >**Note**: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
+    > **Note**: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
 
     ![Under Operation Name, Get Home / Index is selected.](images/Lab-guide/image181.png "Operation Name section")
 
