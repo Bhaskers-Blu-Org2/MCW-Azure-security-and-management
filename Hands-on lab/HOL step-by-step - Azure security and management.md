@@ -102,13 +102,13 @@ Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary conc
 
 - A corporate e-mail address (e.g., your @microsoft.com email).
 
-- Microsoft Azure subscription must be pay-as-you-go or MSDN.
+- Microsoft Azure subscription must be pay-as-you-go or MSDN
   - Trial subscriptions will not work.
 
 - Local machine or an Azure LABVM virtual machine configured with:
-  - Visual Studio 2017 Community Edition or later.
-  - Azure SDK 2.9.+ or Later for Visual Studio.
-  - Azure PowerShell 4.0 or later.
+  - Visual Studio 2017 Community Edition or later
+  - Azure SDK 2.9.+ or Later for Visual Studio
+  - Azure PowerShell 4.0 or later
 
 ## Exercise 1: Configure Azure automation
 
@@ -156,7 +156,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![Screenshot of the Add a credential button.](images/Lab-guide/image25.png "Add a credential button")
 
-3. Specify the following properties and click **Create** to continue.
+3. Specify the following properties and click **Create** to continue:
 
     a. Name: **SQLLocalAdmin**
 
@@ -166,7 +166,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![New Credential blade fields are set to the previously defined settings.](images/Lab-guide/image26.png "New Credential blade")
 
-    > Important: It is important to use the exact name for the credential, because one of the scripts you upload in the next step reference the name directly.
+    > **Important**: It is important to use the exact name for the credential, because one of the scripts you upload in the next step reference the name directly.
 
 ### Task 3: Upload DSC configurations into automation account
 
@@ -192,7 +192,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![In the Compile DSC Configuration box, the Yes button is selected.](images/Lab-guide/image32.png "Compile DSC Configuration box")
 
-6. Make sure to review the DSC configurations to ensure they have completed the compile before moving on to the next step
+6. Make sure to review the DSC configurations to ensure they have completed the compile before moving on to the next step.
 
     ![Screenshot of the Configuration blade.](images/Lab-guide/image33.png "Configuration blade")
 
@@ -250,7 +250,7 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     - Resource Group: **HOLRG** (create a new resource group)
 
-    - Location: **Choose the closest Azure region to you**
+    - Location: **Choose the closest Azure region to you**.
 
     - HOL Storage Type: **Premium\_LRS**
 
@@ -264,9 +264,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     - HOL Public IP DNS Name: **hol-then-five-random-lowercase-characters**
 
-    - Registration Key: Locate in the Automation Account Blade/Keys
+    - Registration Key: **Locate in the Automation Account Blade/Keys**
 
-    - Registration URL: Locate in the Automation Account Blade/Keys
+    - Registration URL: **Locate in the Automation Account Blade/Keys**
 
     - Webnode Configuration Name: **CloudShopWeb.WebServer**
 
@@ -316,19 +316,19 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly. In the Azure Portal, Open the **AppGWVnet** and create a VNet Peering with **hackathonVnet** following the steps below:
     
-    a. In the **AppGWVnet blade,** in settings area select **Peering**  .
+    a. In the **AppGWVnet blade,** in settings area select **Peering**.
     
     b. At the top select **+Add** and complete the form.
 
-        i. Name: **PeeringtoHackathon**
+       i. Name: **PeeringtoHackathon**
 
-        ii. Virtual Network: **hackathonVNet**
+       ii. Virtual Network: **hackathonVNet**
 
-        iii. Configuration: Select **Allow forwarded traffic** and **Allow gateway transit**
+       iii. Configuration: Select **Allow forwarded traffic** and **Allow gateway transit**
 
 14. In the Azure Portal, go to Resource Group **HOLRG**, select and click to open **PublicIP1**. Select **Configuration** in the **Settings** area and put a DNS name level **cloudshop-XXXX** (where X represents unique numbers to make sure it is unique).
 
-15. Repeat the same steps to create a peering from **hackathonVnet** to **AppGWVnet**
+15. Repeat the same steps to create a peering from **hackathonVnet** to **AppGWVnet**.
 
 ### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
 
@@ -349,7 +349,7 @@ h that to Web Server 1
 
     - Resource Group: **HOLRG**
 
-    - Location: **Same location as your web server**
+    - Location: **Same location as your web server**.
     
 2. Click **Create** to create the IP.
 
@@ -475,7 +475,7 @@ The next step is to provision the Azure security and Azure management components
 
     a. OMS Workspace: **Unique name**
 
-    b. Subscription: **Select the current subscription**
+    b. Subscription: **Select the current subscription**.
 
     c. Resource Group: **HOLRG**
 
@@ -571,7 +571,7 @@ To configure the Service Map functionality, the Microsoft Dependency Agent needs
 
 	> **Note**: This command will take a minute or two to run.
 
-3. Repeat the above command two more times, replacing the `--vm-name` parameter with **WEBVM2** and then with **SQLVM**
+3. Repeat the above command two more times, replacing the `--vm-name` parameter with **WEBVM2** and then with **SQLVM**.
 
 4. In the Azure Portal, navigate to the **All Resources** menu and locate the **Service Map** resource you created earlier. Click on the resource name.
 
@@ -707,7 +707,7 @@ To read more about this tool follow this [link](http://bit.ly/2ksdzKV).
 
     - Application Insights Resource: **HOLCloudShop**
 
-    - Location: **Select the same region as your deployment** 
+    - Location: **Select the same region as your deployment**. 
     
     ![Fields in the Configuration settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image104.png "Configuration settings dialog box")
 
@@ -755,7 +755,7 @@ To read more about this tool follow this [link](http://bit.ly/2ksdzKV).
 
     c. Application Insights Resource: **HOLCloudShop**
 
-    d. Location: **Select the same region as your deployment**
+    d. Location: **Select the same region as your deployment**.
 
     ![Fields in the Configuration Settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image109.png "Configuration Settings for Application Insights dialog box")
 
@@ -823,9 +823,9 @@ To read more about this tool follow this [link](http://bit.ly/2ksdzKV).
 
     - URL: **http://cloudshop-XX.southcentralus.cloudapp.azure.com**
 
-    - Test locations: Choose locations from all over the world
+    - Test locations: Choose locations from all over the world.
 
-    - All other accept defaults
+    - All other accept defaults.
 
     ![Create test blade fields are set to the previously defined settings.](images/Lab-guide/image120.png "Create test blade")
 
@@ -1014,7 +1014,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
     - Category: **My Queries**
 
-    - Query: paste the query from your clipboard
+    - Query: **Paste the query from your clipboard**.
 
     - Function Alias: **WindowsDefNeeded**
 
@@ -1022,7 +1022,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
 16. Select **OK.**
 
-17. Let's explore some more sample queries. These are taken from the repository at <https://github.com/MicrosoftDocs/LogAnalyticsExamples/tree/master/log-analytics>.
+17. Let's explore some more sample queries. These are taken from the repository at: <https://github.com/MicrosoftDocs/LogAnalyticsExamples/tree/master/log-analytics>.
 
     Replace the current query with the following:
     ```
@@ -1036,15 +1036,15 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
     | extend availability_rate=total_available_hours*100/total_number_of_buckets
     ```
 
-1. Click **Run**.
+18. Click **Run**.
 
-18. Select **Table** output. Notice how this query calculates VM availability, based on heartbeat.
+19. Select **Table** output. Notice how this query calculates VM availability, based on heartbeat.
 
     ![Screenshot showing the preceding query in Log Analytics, with a table showing the %age availability of each VM.](images/Lab-guide/image185.png "Log Search showing VM availability query")
 
-    For more information on how this query works, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/server-availability-rate.md>.
+    For more information on how this query works, see: <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/server-availability-rate.md>.
 
-19. Replace the current query with the following:
+20. Replace the current query with the following:
     
     ```
     // Find all processes that started in the last 3 days. ID 4688: A new process has been created.
@@ -1064,7 +1064,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
     | render timechart
     ```
 
-1. Click **Run**.
+21. Click **Run**.
 
     > **Note**: This query uses security events (only available when using the Standard tier of Security Center) to identify how often each process was run in the past 3 days, and then calculates the most commonly run processes. For more information, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/top-5-running-processes-in-the-last-3-days.md>.
 
@@ -1157,7 +1157,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
    
    - Alert rule name: **Alert on VM deallocate**
 
-   - Description: **Raise an alert any time any VM in the HOLRG resource group is stop-deallocated**
+   - Description: **Raise an alert any time any VM in the HOLRG resource group is stop-deallocated**.
   
    - Save alert to resource group: **HOLRG**
   
@@ -1177,7 +1177,7 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     - Short name: **Mobile Push**
 
-    - Subscription: **Choose your subscription**
+    - Subscription: **Choose your subscription**.
 
     - Resource group: **HOLRG**
 
