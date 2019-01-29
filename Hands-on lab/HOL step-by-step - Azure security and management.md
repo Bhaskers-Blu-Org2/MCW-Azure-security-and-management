@@ -9,7 +9,7 @@ Hands-on lab Lab-guide
 </div>
 
 <div class="MCWHeader3">
-September 2018
+December 2018
 </div>
 
 
@@ -28,47 +28,47 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
 <!-- TOC -->
 
 - [Azure security and management hands-on lab step-by-step](#azure-security-and-management-hands-on-lab-step-by-step)
-    - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Overview](#overview)
-    - [Solution architecture](#solution-architecture)
-    - [Requirements](#requirements)
-    - [Exercise 1: Configure Azure automation](#exercise-1-configure-azure-automation)
-        - [Overview](#overview-1)
-        - [Task 1: Create automation account](#task-1-create-automation-account)
-        - [Task 2: Add an Azure Automation credential](#task-2-add-an-azure-automation-credential)
-        - [Task 3: Upload DSC configurations into automation account](#task-3-upload-dsc-configurations-into-automation-account)
-        - [Summary](#summary)
-    - [Exercise 2: Build CloudShop environment](#exercise-2-build-cloudshop-environment)
-        - [Overview](#overview-2)
-        - [Task 1: Template deployment](#task-1-template-deployment)
-        - [Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules](#task-2-allow-remote-desktop-to-the-webvm1--webvm2-using-nat-rules)
-        - [Task 3: Configure diagnostics accounts for the VMs](#task-3-configure-diagnostics-accounts-for-the-vms)
-        - [Summary](#summary-1)
-    - [Exercise 3: Build and configure Azure Security Center and Azure Management](#exercise-3-build-and-configure-azure-security-center-and-azure-management)
-        - [Overview](#overview-3)
-        - [Task 1: Provision Log Analytics through Azure Monitor](#task-1-provision-log-analytics-through-azure-monitor)
-        - [Task 2: Explore Security Center](#task-2-explore-security-center)
-        - [Task 3: Add Service Map](#task-3-add-service-map)
-        - [Task 4: Configure Service Map](#task-4-configure-service-map)
-        - [Task 5: Configure Update Management](#task-5-configure-update-management)
-        - [Task 6: Configure Inventory Tracking and Change Management](#task-6-configure-inventory-tracking-and-change-management)
-        - [Summary](#summary-2)
-    - [Exercise 4: Instrument CloudShop using Azure Application Insights](#exercise-4-instrument-cloudshop-using-azure-application-insights)
-        - [Overview](#overview-4)
-        - [Task 1: Install and Configure the Application Insights Status Monitor](#task-1-install-and-configure-the-application-insights-status-monitor)
-        - [Task 2: Explore the Application Map, configure alerts, availability tests, and performance tests](#task-2-explore-the-application-map-configure-alerts-availability-tests-and-performance-tests)
-        - [Task 3: Simulate a failure of the CloudShop application](#task-3-simulate-a-failure-of-the-cloudshop-application)
-        - [Summary](#summary-3)
-    - [Exercise 5: Explore Azure Security and Operations Management, Application Insights and build a dashboard](#exercise-5-explore-azure-security-and-operations-management-application-insights-and-build-a-dashboard)
-        - [Overview](#overview-5)
-        - [Task 1: Work with Log Analytics queries](#task-1-work-with-log-analytics-queries)
-        - [Task 2: Preventive maintenance using Security Center](#task-2-preventive-maintenance-using-security-center)
-        - [Task 3: Set up an Activity Log alert](#task-3-set-up-an-activity-log-alert)
-        - [Task 4: Installing & using the Azure mobile application](#task-4-installing-using-the-azure-mobile-application)
-        - [Task 5: Application Insights](#task-5-application-insights)
-        - [Summary](#summary-4)
-    - [After the hands-on lab](#after-the-hands-on-lab)
-        - [Overview](#overview-6)
+  - [Abstract and learning objectives](#abstract-and-learning-objectives)
+  - [Overview](#overview)
+  - [Solution architecture](#solution-architecture)
+  - [Requirements](#requirements)
+  - [Exercise 1: Configure Azure automation](#exercise-1-configure-azure-automation)
+    - [Overview](#overview-1)
+    - [Task 1: Create automation account](#task-1-create-automation-account)
+    - [Task 2: Add an Azure Automation credential](#task-2-add-an-azure-automation-credential)
+    - [Task 3: Upload DSC configurations into automation account](#task-3-upload-dsc-configurations-into-automation-account)
+    - [Summary](#summary)
+  - [Exercise 2: Build CloudShop environment](#exercise-2-build-cloudshop-environment)
+    - [Overview](#overview-2)
+    - [Task 1: Template deployment](#task-1-template-deployment)
+    - [Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules](#task-2-allow-remote-desktop-to-the-webvm1--webvm2-using-nat-rules)
+    - [Task 3: Configure diagnostics accounts for the VMs](#task-3-configure-diagnostics-accounts-for-the-vms)
+    - [Summary](#summary-1)
+  - [Exercise 3: Build and configure Azure Security Center and Azure Management](#exercise-3-build-and-configure-azure-security-center-and-azure-management)
+    - [Overview](#overview-3)
+    - [Task 1: Provision Log Analytics through Azure Monitor](#task-1-provision-log-analytics-through-azure-monitor)
+    - [Task 2: Explore Security Center](#task-2-explore-security-center)
+    - [Task 3: Add Service Map](#task-3-add-service-map)
+    - [Task 4: Configure Service Map](#task-4-configure-service-map)
+    - [Task 5: Configure Update Management](#task-5-configure-update-management)
+    - [Task 6: Configure Inventory Tracking and Change Management](#task-6-configure-inventory-tracking-and-change-management)
+    - [Summary](#summary-2)
+  - [Exercise 4: Instrument CloudShop using Azure Application Insights](#exercise-4-instrument-cloudshop-using-azure-application-insights)
+    - [Overview](#overview-4)
+    - [Task 1: Install and Configure the Application Insights Status Monitor](#task-1-install-and-configure-the-application-insights-status-monitor)
+    - [Task 2: Explore the Application Map, configure alerts, availability tests, and performance tests](#task-2-explore-the-application-map-configure-alerts-availability-tests-and-performance-tests)
+    - [Task 3: Simulate a failure of the CloudShop application](#task-3-simulate-a-failure-of-the-cloudshop-application)
+    - [Summary](#summary-3)
+  - [Exercise 5: Explore Azure Security and Operations Management, Application Insights, and build a dashboard](#exercise-5-explore-azure-security-and-operations-management-application-insights-and-build-a-dashboard)
+    - [Overview](#overview-5)
+    - [Task 1: Work with Log Analytics queries](#task-1-work-with-log-analytics-queries)
+    - [Task 2: Preventive maintenance using Security Center](#task-2-preventive-maintenance-using-security-center)
+    - [Task 3: Set up an Activity Log alert](#task-3-set-up-an-activity-log-alert)
+    - [Task 4: Installing & using the Azure mobile application](#task-4-installing--using-the-azure-mobile-application)
+    - [Task 5: Application Insights](#task-5-application-insights)
+    - [Summary](#summary-4)
+  - [After the hands-on lab](#after-the-hands-on-lab)
+    - [Overview](#overview-6)
 
 <!-- /TOC -->
 
@@ -80,7 +80,7 @@ In this hands-on lab, you will first deploy a simple web application and databas
 
 At the end of this hands-on lab, you will be better able to design, implement and use a wide range of infrastructure management systems in Azure.
 
->**Note**: The setup tasks should be completed in advance of the hands-on lab to save deployment time.
+> **Note**: The setup tasks should be completed in advance of the hands-on lab to save deployment time.
 
 ## Overview
 
@@ -96,24 +96,19 @@ Per Roberto Milian, VP of Development and IT Operations, "Contoso's primary conc
 
 ## Solution architecture
 
-![The Proof of Concept Solution diagram includes Cloud Shop Application and Azure Management and Monitoring.](images/Lab-guide/image2.png "Proof of Concept Solution diagram")
+![The Proof of Concept Solution diagram includes Cloud Shop Application and Azure Management and Monitoring.](images/Lab-guide/image00.png "Proof of Concept Solution diagram")
 
 ## Requirements
 
--   A corporate e-mail address (*e.g.*, your \@microsoft.com email).
+- A corporate e-mail address (e.g., your @microsoft.com email).
 
--   Microsoft Azure subscription must be pay-as-you-go or MSDN
+- Microsoft Azure subscription must be pay-as-you-go or MSDN
+  - Trial subscriptions will not work.
 
-    -   Trial subscriptions will *not* work.
-
--   Local machine or an Azure LABVM virtual machine configured with:
-
-    -   Visual Studio 2017 Community Edition or later
-
-    -   Azure SDK 2.9.+ or Later for Visual Studio
-
-    -   Azure PowerShell 4.0 or later
-
+- Local machine or an Azure LABVM virtual machine configured with:
+  - Visual Studio 2017 Community Edition or later
+  - Azure SDK 2.9.+ or Later for Visual Studio
+  - Azure PowerShell 4.0 or later
 
 ## Exercise 1: Configure Azure automation
 
@@ -125,23 +120,27 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 ### Task 1: Create automation account
 
-1. Browse to the Azure Portal, and authenticate at <https://portal.azure.com/>.
+1. Browse to the Azure Portal and authenticate at <https://portal.azure.com/>.
+
+    ```
+    http://portal.azure.com
+    ```
 
 2. Click **+Create a resource,** and type **Automation** in the search box. Choose **Automation** from the results.
-
+    
     ![Fields in the Everything blade are set to the previously defined settings.](images/Lab-guide/image21.png "Everything blade")
 
 3. Select **Create** on the Automation blade. This will display the **Add Automation Account** blade.
 
 4. On the **Add Automation Account** blade, specify the following information:
 
-    - Name: **Automation-Acct**
+    a. Name: **Automation-Acct**
 
-    - Resource group: **HOLRGAUTO** (create a new resource group)
+    b. Resource group: **HOLRGAUTO** (create a new resource group)
 
-    - Location: **East US 2** or **West Europe**
+    c. Location: **East US 2** or **West Europe**
 
-    >**Note**: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you.
+    > **Note**: Not all Azure Automation features are supported in all regions. We suggest using East US 2 or West Europe, whichever is closer to you. Leave the run as account state as default.
 
     ![Fields in the Add Automation Account blade are set to the previously defined settings.](images/Lab-guide/image22.png "Add Automation Account blade")
 
@@ -159,19 +158,19 @@ In this exercise, you will create and configure an Azure Automation account in t
 
 3. Specify the following properties and click **Create** to continue:
 
-    - Name: **SQLLocalAdmin**
+    a. Name: **SQLLocalAdmin**
 
-    - User Name: **demouser**
+    b. User Name: **demouser**
 
-    - Password & Confirm: **demo\@pass123**
+    c. Password & Confirm: **demo\@pass123**
 
     ![New Credential blade fields are set to the previously defined settings.](images/Lab-guide/image26.png "New Credential blade")
 
-    >**Important**: It is important to use the exact name for the credential, because one of the scripts you upload in the next step references the name directly.
+    > **Important**: It is important to use the exact name for the credential, because one of the scripts you upload in the next step reference the name directly.
 
 ### Task 3: Upload DSC configurations into automation account
 
-1. Select **Resource groups \> HOLRGAUTO \> Automation-Acct** and click **State Configurations (DSC) in Configuration Management** then select **configuration** then selet **Add**.
+1. Select **Resource groups \> HOLRGAUTO \> Automation-Acct** and click **State Configurations (DSC) in Configuration Management**. Select **configuration** and then select **Add**.
 
     ![Screenshot of the Automation Account blade.](images/Lab-guide/image27.png "Automation Account blade")
 
@@ -183,7 +182,9 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![Screenshot of the Import blade with fields set to the previously defined settings.](images/Lab-guide/image29.png "Import blade")
 
-4. After importing the .ps1 files, select the **CloudShopSQL** DSC Configuration. Then, select **Compile** on the toolbar (*click **Yes** on the overwrite prompt*). Do the same for **CloudShopWeb**.
+4. After importing the .ps1 files, select the **CloudShopSQL** DSC Configuration. Then, select **Compile** on the toolbar (*click **Yes** on the overwrite prompt*). 
+   
+5. Repeat the same steps for **CloudShopWeb**.
 
     ![The name field is set to CloudShopSQL in the Automation Account blade.](images/Lab-guide/image30.png "Automation Account blade")
 
@@ -191,7 +192,7 @@ In this exercise, you will create and configure an Azure Automation account in t
 
     ![In the Compile DSC Configuration box, the Yes button is selected.](images/Lab-guide/image32.png "Compile DSC Configuration box")
 
-5. Make sure to review the DSC configurations to ensure they have completed the compile prior to moving on to the next step.
+6. Make sure to review the DSC configurations to ensure they have completed the compile before moving on to the next step.
 
     ![Screenshot of the Configuration blade.](images/Lab-guide/image33.png "Configuration blade")
 
@@ -221,9 +222,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     ![The primary key and URL displays in Notepad.](images/Lab-guide/image36.png "Notepad")
 
-4. In the Azure Portal, select the **+Create a resource** button. In the Search box, type **Template Deployment.**
+4. In the Azure Portal, select the **+Create a resource** button. In the Search box, type **Template Deployment**.
 
-5. Select **Template Deployment and** click **Create** on the following screen.
+5. Select **Template Deployment** and click **Create** on the following screen.
 
     ![Template deployment is circled in the Everything blade.](images/Lab-guide/image37.png "Everything blade")
 
@@ -233,21 +234,19 @@ In this exercise, you will run a template deployment using an ARM template provi
 
 7. Select **Load File**.
 
-    ![The Load file button is selected in teh Edit template blade.](images/Lab-guide/image39.png "Edit template blade")
+    ![The Load file button is selected in the Edit template blade.](images/Lab-guide/image39.png "Edit template blade")
 
-8. In the Choose File to Upload dialog, navigate to the **C:\\HOL** folder, and locate the **OMSHacakthon-azuredeploy.json** file.
+8. In the Choose File to Upload dialog, navigate to the **C:\\HOL** folder, and locate the **OMSHacakthon-azuredeployappgw.json** file.
 
-    ![Screenshot of the Choose File to Upload dialog box with the previously mentioned path expanded.](images/Lab-guide/image40.png "Choose File to Upload dialog box")
-
-9. The JSON file will now be in the text window and the Parameters, Variables, and Resources should load in the Window. Select **Save**.
+9. The JSON file will now be in the text window and the *Parameters*, *Variables*, and *Resources* should load in the Window. Select **Save**.
 
     ![Screenshot of the Edit template blade with JSON code.](images/Lab-guide/image41.png "Edit template blade")
 
-10. Once saved, the window will change to a screen which is asking for inputs. Use the following information to complete:
+10. Once saved, the window will change to a screen which is asking for inputs. Use the following information to complete the form:
 
     > **Note**: In your student files C:\\HOL\\parameters.txt there is a parameters file that you can use to quickly copy and paste into the portal.
 
-    - Subscription: **Use the current subscription**.
+    - Subscription: **Use the current subscription**
 
     - Resource Group: **HOLRG** (create a new resource group)
 
@@ -265,9 +264,9 @@ In this exercise, you will run a template deployment using an ARM template provi
 
     - HOL Public IP DNS Name: **hol-then-five-random-lowercase-characters**
 
-    - Registration Key: **Locate in the Automation Account Blade/Keys**.
+    - Registration Key: **Locate in the Automation Account Blade/Keys**
 
-    - Registration URL: **Locate in the Automation Account Blade/Keys**.
+    - Registration URL: **Locate in the Automation Account Blade/Keys**
 
     - Webnode Configuration Name: **CloudShopWeb.WebServer**
 
@@ -302,122 +301,81 @@ In this exercise, you will run a template deployment using an ARM template provi
     - HOL VM2 Admin Password: **demo\@pass123**
 
     - HOL VM2 Windows OS Version: **2016-Datacenter**
+  
+    - Application Gateway Size: **Leave default**
+  
+    - Capacity: **Leave default**
 
     - Web AV Set Name: **webAVSet**
 
-11. Once completed, choose the **I agree to the terms and conditions stated above,** and the **Pin to Dashboard** followed by **Purchase**.
+11. Once completed, choose the **I agree to the terms and conditions stated above,** and then click **Purchase**.
 
-    ![The Pin to dashboard checkbox and Purchase button are selected in the Terms and Conditions section.](images/Lab-guide/image42.png "Terms and Conditions section")
+12. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
 
-12. A Deployment tile will appear on your **My Dashboard**. This deployment should take about 25-30 minutes. The servers will take some time to check in with Azure Automation and configure the CloudShop application.
+    > **Note**: Wait for the Deployment to successfully complete before to moving on to the next steps.
 
-    ![Screenshot of the Deployment tile.](images/Lab-guide/image43.png "Deployment tile")
+13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly. In the Azure Portal, Open the **AppGWVnet** and create a VNet Peering with **hackathonVnet** following the steps below:
+    
+    a. In the **AppGWVnet blade,** in settings area select **Peering**.
+    
+    b. At the top select **+Add** and complete the form.
 
-    > **Note**: Wait for the Deployment to successfully complete prior to moving on to the next steps.
+       i. Name: **PeeringtoHackathon**
 
-13. Now that the servers are built, and the deployment is complete, let's verify the servers are up and running properly...
+       ii. Virtual Network: **hackathonVNet**
 
-14. In the Azure Portal, open the **HOLRG,** and locate the Public IP Address **hackathonPublicIP**. Click on the blade to open.
+       iii. Configuration: Select **Allow forwarded traffic** and **Allow gateway transit**
 
-    ![In the Azure Portal, in the Search results list, hackathonPublicIP is selected.](images/Lab-guide/image44.png "Azure Portal")
+14. In the Azure Portal, go to Resource Group **HOLRG**, select and click to open **PublicIP1**. Select **Configuration** in the **Settings** area and put a DNS name level **cloudshop-XXXX** (where X represents unique numbers to make sure it is unique).
 
-15. On the **hackathonPublicIP** blade, locate the DNS Name you provided during the template deployment. If you hover your mouse over the name, you can **click to copy** the name to the clipboard. Paste this into your Notepad document you opened earlier.
-
-    ![The DNS name is selected in the HackathonPublicIP blade.](images/Lab-guide/image45.png "HackathonPublicIP blade")
-
-16. Open a new tab in Internet Explorer and paste the URL. This is the DNS name that is attached to the Azure Load Balancer in front of the CloudShop Application web servers **WEBVM1** & **WEBVM2**.
-
-17. When the page loads, the CloudShop application should appear, and it will show which VM is serving the web page. In this screen capture, we see it is running on **WEBVM2**.
-
-    ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM2 virtual machine name.](images/Lab-guide/image46.png "Cloud Shop webpage")
-
-18. By pressing **F5** on your keyboard, you can refresh the website until you see that **WEBVM1** is also serving webpages.
-
-    ![Screenshot of the Cloud Shop webpage with a callout pointing to the WEBVM1 virtual machine name.](images/Lab-guide/image47.png "Cloud Shop webpage")
+15. Repeat the same steps to create a peering from **hackathonVnet** to **AppGWVnet**.
 
 ### Task 2: Allow remote desktop to the WEBVM1 & WEBVM2 using NAT rules
 
-Now that the deployment and the application is up and running, the next step is to allow RDP to the Web Servers. This will be accomplished by building NAT Rules through the Azure Load Balancer.
+Now that the deployment and the application is up and running, the next step is to allow RDP to the Web Servers. There are many ways you can achieve this, including provisioning a dedicated jump box (or bastion host) in the same VNet where the web servers reside as well as simply attaching a public IP to one of the web servers and using that as a jump box. It is also possible to forward RDP traffic through Azure Load Balancer. For this task, you will be attaching a public IP to one of the web servers.
+h that to Web Server 1
 
-1. Open the **HOLRG** Resource Group and locate **loadBalancer1**. Click to open its administration blade.
+1. Click **+ Create a resource** and type *Public IP Address*. Complete the blade with the following information
 
-    ![In the Resource group blade, under Name, loadBalancer1 is selected.](images/Lab-guide/image48.png "Resource group blade")
+    - Name: **Webserver1PublicIP**
 
-2. On the **loadBalancer1** blade, locate **Inbound NAT rules in Settings**.
+    - SKU: **Basic**
 
-    ![In the LoadBalancer 1 blade, under Settings, Inbound NAT rules is selected.](images/Lab-guide/image49.png "LoadBalancer 1 blade")
+    - IP Version: **IPv4**
 
-3. Click **+Add,** and complete the blade using the following information:
+    - IP Address Assignment: **Dynamic**
 
-    - Name: **rdp-webvm1**
+    - DNS Name label: **Put unique DNS Prefix**
 
-    - Frontend IP Address: **accept default**
+    - Resource Group: **HOLRG**
 
-    - Service: **RDP**
+    - Location: **Same location as your web server**.
+    
+2. Click **Create** to create the IP.
 
-    - Port: **3389**
+3. Once Created, open the **Webserver1PublicIP** blade and associate it with Web Server 1 Network Interface.
 
-    - Associated to: **webavset**
+    ![Public IP Association.](images/Lab-guide/publicipassociate.png "Public IP blade")
 
-    - Target: **Choose a virtual machine: WEBVM1**.
+    ![The Connect button is selected in the Virtual machine blade.](images/Lab-guide/publicipassociate2.png "Public IP Association with VM Nic ")
 
-    - Network IP configuration: **ipconfig1 (10.0.0.4)**
-
-    - Port mapping: **Default**
-
-    ![Add inbound NAT rule blade fields are set to the previously defined settings.](images/Lab-guide/image50.png "Add inbound NAT rule blade")
-
-4. The portal will give a notice that it is: **"Saving load balancer inbound NAT rule**". Wait until this completes before continuing.
-
-    ![Screenshot of the Saving load balancer inbound NAT rule notice.](images/Lab-guide/image51.png "Saving load balancer inbound NAT rule notice")
-
-    ![Screenshot of the Saved load balancer inbound NAT rule message.](images/Lab-guide/image52.png "Saved load balancer inbound NAT rule message")
-
-5. Click **+Add,** and complete the blade using the following information:
-
-    - Name: **rdp-webvm2**
-
-    - Frontend IP Address: **accept default**
-
-    - Service: **RDP**
-
-    - Port: **3390**
-
-    - Target **Choose a virtual machine: WEBVM2**.
-
-    - Network IP configuration: **ipconfig1 (10.0.0.5)**
-
-    - Port mapping: **Custom**
-
-    - Floating IP: **Disabled**
-
-    - Target Port: **3389**
-
-    ![Add inbound NAT rule blade fields are set to the previously defined settings.](images/Lab-guide/image53.png "Add inbound NAT rule blade")
-
-6. The portal will give a notice that it is: **"Saving load balancer inbound NAT rule**". Wait until this completes before continuing.
-
-    ![Screenshot of the Saving load balancer inbound NAT rule notice.](images/Lab-guide/image51.png "Saving load balancer inbound NAT rule notice")
-
-    ![Screenshot of the Saved load balancer inbound NAT rule message.](images/Lab-guide/image54.png "Saved load balancer inbound NAT rule message")
-
-7. To verify the new NAT Rules are working, move back to the **HOLRG** in the Azure portal. Select **WEBVM1,** and the **Connect** Link should now be available. Select **Connect**.
+4. In the Azure portal, select **WEBVM1,** and the **Connect** Link should now be available. Select **Connect**.
 
     ![The Connect button is selected in the Virtual machine blade.](images/Lab-guide/image55.png "Virtual machine blade")
 
-8. On the 'Connect to virtual machine' blade, check the **RDP** tab is selected and choose **Download RDP File**
+5.  On the 'Connect to virtual machine' blade, ensure the **RDP** tab is selected and choose **Download RDP File**.
 
     ![The Download RDP File button is highlighted on the RDP tab of the Connect to virtual machine blade](images/Lab-guide/image55b.png "Connect to virtual machine blade")
   
-9. Select **Open** when the RDP file downloads.
+6.  Select **Open** when the RDP file downloads.
 
     ![The Open button is selected in the Open or Save message.](images/Lab-guide/image56.png "Open or Save option")
 
-10. You will get a warning about the publisher of the RDP file being unknown. Select **Don't ask me again for connections to this computer** and click **Connect.**
+7.  You will get a warning about the publisher of the RDP file being unknown. Select **Don't ask me again for connections to this computer** and click **Connect.**
 
-    ![In the Remote Desktop Connection dialog box, the Don't ask me again checkbox and the Connect button are both selected.](images/Lab-guide/image57.png "Remote Desktop Connection dialog box")
+    ![In the Remote Desktop Connection dialog box, the Don\'t ask me again checkbox and the Connect button are both selected.](images/Lab-guide/image57.png "Remote Desktop Connection dialog box")
 
-11. When prompted by Windows Security, enter your credentials:
+8.  When prompted by Windows Security, enter your credentials:
 
     - User Name: **demouser**
 
@@ -425,41 +383,41 @@ Now that the deployment and the application is up and running, the next step is 
 
     ![Screenshot of the Windows Security prompt.](images/Lab-guide/image58.png "Windows Security prompt")
 
-12. A warning will appear stating: **The identity of the remote computer cannot be verified. Do you want to connect anyway?** Select the checkbox for the disclaimer: **Don't ask me again for connection to this computer.** Then, select **Yes**.
+9.  A warning will appear stating **The identity of the remote computer cannot be verified. Do you want to connect anyway?**. Select the checkbox for the disclaimer **Don't ask me again for connection to this computer.** and then select **Yes**.
 
-    ![The Remote Desktop Connection warning dialog box displays with the Don't ask me again checkbox and the Yes button selected.](images/Lab-guide/image59.png "Remote Desktop Connection warning dialog box ")
+    ![The Remote Desktop Connection warning dialog box displays with the Don\'t ask me again checkbox and the Yes button selected.](images/Lab-guide/image59.png "Remote Desktop Connection warning dialog box ")
 
->**Note**: When connecting to machines during this lab for the first time, you may encounter the same warnings etc. Follow these same steps to no longer receive those warnings as they do not apply to our setup.
+    > **Note**: When connecting to machines during this lab for the first time, you may encounter the same warnings. Follow these same steps to no longer receive those warnings as they do not apply to our setup.
 
-13. When logging on for the first time, you will see a prompt on the right asking about network discovery. Select **No**.
+10. When logging on for the first time, you will see a prompt on the right asking about network discovery. Select **No**.
 
 	![The No button is selected in the Networks prompt.](images/Setup/image10.png "Networks prompt")
 
-14. Notice the Server Manager opens by default. On the left, select **Local Server**.
+10. Notice the Server Manager opens by default. On the left, select **Local Server**.
 
     ![Screenshot of the Local Server option.](images/Setup/image11.png "Local Server option")
 
-15. On the right side of the pane, select **On** by **IE Enhanced Security Configuration**.
+11. On the right side of the pane, select **On** by **IE Enhanced Security Configuration**.
 
     ![The IE Enhanced Security Configuration is set to On.](images/Setup/image12.png "IE Enhanced Security Configuration setting")
 
-16. Change to **Off** for Administrators and select **OK**.
+12. Change to **Off** for Administrators and select **OK**.
 
     ![Screenshot of the Internet Explorer Enhanced Security Configuration dialog box.](images/Setup/image13.png "Internet Explorer Enhanced Security Configuration dialog box")
 
-17. In the lower left corner, select the **Windows** button to open the **Start Screen**. Then, **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by selecting **OK**.
+13. In the lower left corner, select the **Windows** button to open the **Start Screen**. Then, **Internet Explorer** to open it. On first use, you will be prompted about security settings. Accept the defaults by selecting **OK**.
 
     ![Screenshot of the Internet Explorer 11 security settings dialog box with Use recommended settings selected.](images/Setup/image14.png "Internet Explorer 11 security settings dialog box")
 
-18. Leave your RDP Session to **WEBVM1** open and minimized. Then, repeat this same procedure for **WEBVM2**.
+14. Leave your RDP Session to **WEBVM1** open and minimized. Then, repeat this same procedure for **WEBVM2**.
 
 ### Task 3: Configure diagnostics accounts for the VMs
 
-In this task, you will configure the VMs to capture diagnostic data in an Azure Storage Account. Later you will connect this account to the Azure Security Center and Log Analytics.
+In this task, you will configure the VMs to capture diagnostic data in an Azure Storage Account. Later you will connect this account to Azure Security Center and Log Analytics.
 
-1. In the Azure Portal navigate to the **HOLRG** Resource Group and locate **WEBVM1**. Select the name to open the blade.
+1. In the Azure Portal, navigate to the **HOLRG** Resource Group and locate **WEBVM1**. Select the name to open the blade.
 
-2. On the **WEBVM1,** locate the **Monitoring** section, and select **Diagnostic Settings**.
+2. On the **WEBVM1,** locate the **Monitoring** section, and select **Diagnostic Settings**
 
     ![On the WEBVM1 blade under Monitoring, Diagnostic settings is selected.](images/Lab-guide/image60.png "WEBVM1 blade")
 
@@ -469,11 +427,13 @@ In this task, you will configure the VMs to capture diagnostic data in an Azure 
 
     ![Screenshot of the Updating diagnostics settings notification.](images/Lab-guide/image62.png "Updating diagnostics settings notification")
 
+    > **Note**: If you receive an error at this stage. Navigate to All Services -> Subscriptions -> Resource Providers -> and ensure the Microsoft.Insights resource provider is registered.
+
 4. Select the Configure performance counters.
 
     ![Under Performance counters, the Configure performance counters link is selected.](images/Lab-guide/image63.png "Performance counters section")
 
-5. Next check the **ASP.NET box,** and select **Save**.
+5. Next check the **ASP.NET box** and select **Save**.
 
     ![On the Performance counters tab, the ASP.NET checkbox is called out.](images/Lab-guide/image64.png "Performance counters tab")
 
@@ -483,17 +443,17 @@ In this task, you will configure the VMs to capture diagnostic data in an Azure 
 
 7. Complete the same steps for **WEBVM2**.
 
-8. Next, using the same steps, configure **SQLVM** for Diagnostics as well, Select the following metrics for this SQL Server, and select **Save**.
+8. Next, using the same steps, configure **SQLVM** for diagnostics capture as well. Select the following metrics for this SQL Server, and select **Save**.
 
-    - SQL Metrics
+    a. SQL Metrics
 
     ![On the Performance counters tab, the SQL Server checkbox is called out.](images/Lab-guide/image65.png "Performance counters tab")
 
->**Note**: You will need to wait for the portal to complete the updates to all VMs before moving to the next exercise.
+    > **Note**: You will need to wait for the portal to complete the updates to all VMs before moving to the next exercise.
 
 ### Summary
 
-In this exercise, you ran a template deployment using an ARM template provided which created a Virtual Network, Azure Load balancer, two IIS Servers and a SQL Server. The servers checked into Azure Automation and ran the DSC Configurations that configured the boxes with the CloudShop Application. You then configured Inbound NAT Rules to allow RDP access to the Web Servers and successfully connected. Azure diagnostics was also configured into a new storage account for the VMs.
+In this exercise, you ran a template deployment using an ARM template provided which created a Virtual Network, Azure Load balancer, two IIS Servers and a SQL Server. The servers checked into Azure Automation and ran the DSC Configurations that configured the boxes with the CloudShop Application. You then configured a public IP to access the servers through a jump box and successfully connected to them through RDP. Azure diagnostics was also configured with a new storage account for the VMs.
 
 ## Exercise 3: Build and configure Azure Security Center and Azure Management
 
@@ -505,23 +465,23 @@ The next step is to provision the Azure security and Azure management components
 
 ### Task 1: Provision Log Analytics through Azure Monitor
 
-1. Open the **Azure portal** and navigate to Azure Monitor by clicking **All services**, searching for "*Log Analytics*", and selecting **Monitor**.
+1. Open the **Azure portal** and navigate to **All services**, search for **Log Analytics**.
 
     ![Screenshot of the Azure portal with the previous selections displaying.](images/Lab-guide/image66.png "Azure portal")
 
-2. In the Log Analytics blade, select **+Add**.
+2. In the Log Analytics blade, select **+ Add**.
 
 3. Complete the OMS Workspace blade using the following information. Then, select  **OK**:
 
-    - OMS Workspace: **Unique name**
-    
-    - Subscription: **Select the current subscription**.
-    
-    - Resource Group: **HOLRG**
+    a. OMS Workspace: **Unique name**
 
-    - Location: **Closest to your deployment**
+    b. Subscription: **Select the current subscription**.
 
-    - Pricing Tier: **Select Per GB**
+    c. Resource Group: **HOLRG**
+
+    d. Location: **Closest to your deployment**
+
+    e. Pricing Tier: **Select Per GB**
 
     ![Fields in the OMS Workspace and Pricing Tier blades are set to the prevoiusly defined settings.](images/Lab-guide/image68.png "OMS Workspace and Pricing Tier blades")
 
@@ -529,7 +489,7 @@ The next step is to provision the Azure security and Azure management components
 
     ![Screenshot of the Log Analytics resource.](images/Lab-guide/image69.png "Log Analytics resource")
 
-5. Once it loads in the Azure Portal, move the slider bar down, and select **Virtual Machines** which is found in the **Workspace Data Sources** section.
+5. Open the newly created oms log analytics workspace and select Virtual Machines which is found in the **Workspace Data Sources** section.
 
     ![Under Workspace Data Sources, Virtual machines is selected.](images/Lab-guide/image70.png "Workspace Data Sources section")
 
@@ -543,47 +503,41 @@ The next step is to provision the Azure security and Azure management components
 
 8. Follow the same steps for the **WEBVM1** & **WEBVM2**.
 
-9. The portal should update to show that they are now a part of "This workspace" once they have all been added.
+9. The portal should update to show that they are now a part of *This workspace* once they have all been added.
 
     ![SQLVM, WEBVM1, and WEBVM2 display in the portal.](images/Lab-guide/image73.png "Portal")
 
 ### Task 2: Explore Security Center
 
-1. Open the Azure portal and navigate to the **Security Center** menu option (**All Services Security Center**).
+1. Open the Azure portal and navigate to the **Security Center** menu option (**All Services > Security Center**).
 
     ![Within the Azure Portal, Security Center is selected.](images/Lab-guide/image74.png "Azure Portal")
 
-2. This will present the **Security Center - Overview** screen. Notice that it's already collecting data. For this exercise, you want to upgrade to Standard tier which extends the capabilities of the Free tier to workloads running in private and other public clouds. It provides unified security management and thread protection across your hybrid cloud workloads. The Standard tier also adds advanced thread detection capabilities, which uses built-in behavioral analytics and machine learning to identify attacks and zero-day exploits, access and application controls to reduce exposure to network attacks and malware, and more.
+2. This will present the **Security Center - Overview** screen. For this exercise, you want to upgrade to the Standard tier which extends the capabilities of the Free tier to workloads running anywhere, including on-premises. It provides unified security management and threat protection across your hybrid cloud workloads. The Standard tier also adds advanced threat detection capabilities, which uses built-in behavioral analytics and machine learning to identify attacks and zero-day exploits, access and application controls to reduce exposure to network attacks and malware, and more.
 
-    ![Screenshot of the Security Center - Overview screen.](images/Lab-guide/image75.png "Security Center - Overview screen")
+3. Select **Start trial** if present (your subscription may already be enabled for Standard).
 
-3. Select **Onboard to Advanced Security**.
+4. Close the panel and navigate back to the **Security Center Overview** screen. Click on **Security policy** under the **Policy & Compliance** section. Review the policy options that can be automatically applied to your subscription.
 
-4. Select the subscription you would like to upgrade by clicking on the subscription name.
+5. Click on **Recommendations** on the left navigation. Note the different options and the **SECURE SCORE IMPACT**. This lets you know the impact of the changes on your overall security score (the higher the better).
 
-    ![Screenshot of the Enable advanced security for subscriptions page with a subscription selected.](images/Lab-guide/image76.png "Enable advanced security for subscriptions page")
+6. Click the option for **Install monitoring agent on your Virtual machines**. On the next screen, click **Install agents** to turn on automatic provision of the monitoring agent. 
 
-5. Select the **Standard** pricing tier and click on **Save**.
+7. On the next screen, accept the default workspace configuration and click **Save** to enable monitoring. This will automatically install the agent on any new or existing virtual machines in the subscription. 
 
-    ![Screenshot of the Pricing blade with the Standard option and the Save button selected.](images/Lab-guide/image77.png "Pricing blade")
+8. After a few minutes, refresh the portal and click on **Compute & Apps**. You will see the **Resolve monitoring agent health issues on your machines** move to an orange state. Click on the orange bar and you will see that this recommendation is being remediated. 
 
-6. Close the panel and navigate back to the **Security Center Overview** screen. Click on **Security policy** under the **General** section. This is where you will enable data collection.
+9. Next, click on the **Recommendations** tab again and remediate the **Install endpoint protection solution on virtual machines** recommendation by clicking on it and following the directions to install Endpoint Protection on all of the virtual machines except **LabVM**.
+    
+    > **Note**: You can accept the default configuration options for Microsoft Endpoint protection. 
 
-    ![Under General, Security policy is selected.](images/Lab-guide/image78.png "General section")
-
-7. This brings up the **Security policy** screen where you will click on your subscription name which is currently in an Off state for data collection.
-
-    ![Screenshot of the Demo subscription name, with Automatic provisioning set to Off.](images/Lab-guide/image79.png "Subscription name")
-
-8. This presents the **Data Collection** screen. Turn on data collection by clicking the **On** button, selecting **Use another workspace** and selecting the Log Analytics workspace created in [Task 1: Provision Log Analytics](#task-1-provision-log-analytics-through-azure-monitor) and then clicking **Save** and click on Yes if prompted.
-
-    ![Screenshot of the Data Collection screen with the previously defined settings.](images/Lab-guide/image80.png "Data Collection screen")
+You will explore Azure Security Center more later in this lab, including configuring alerts and preventative maintenance.
 
 ### Task 3: Add Service Map
 
-In this section, you will add Service Map to Log Analytics.
+In this section, you will add the Service Map solution to Log Analytics.
 
-1. From the Azure portal, click the **+Create a resource** Link followed by **Management Tools** and **See all**.
+1. From the Azure portal, click the **+ Create a resource** Link followed by **Management Tools** and **See all**.
 
     ![Create a resource > Management Tools > See All click path screenshot.](images/Lab-guide/image81.png "Create a resource > Management Tools > See all")
         
@@ -591,25 +545,23 @@ In this section, you will add Service Map to Log Analytics.
 
     ![Screenshot of the Dynatrace homepage.](images/Lab-guide/image83.png "Dynatrace homepage")
 
-3. Locate the **Service Map** solution and select it. If you don't see it on the page, use the *Search Monitoring + Management* field at the top of the screen to search for **Service Map**. On the Details page, you can read about the solution. When ready, select **Create.**
+3. Locate the **Service Map** solution and select it. If you don't see it on the page, use the *Search Monitoring + Management* field at the top of the screen to search for **Service Map**. On the Details page, you can read about the solution. When ready, select **Create**.
 
     ![In the Monitoring and Management blade, in the search results, Service Map is selected.](images/Lab-guide/image84.png "Monitoring and Management blade")
 
-4. Select the OMS Workspace you created and check the **Pin to dashboard** before selecting **Create**.
+4. Select the Log Analytics workspace you created and click **Create**.
 
     ![Screenshot of the Service Map blade.](images/Lab-guide/image85.png "Service Map blade")
 
 ### Task 4: Configure Service Map
 
-To configure the Service Map functionality, the Microsoft Dependency Agent needs to be installed on each virtual machine.
-This can be installed as a VM extension, however this VM extension is not currently available via the Azure portal.
-For this lab, we'll install the VM extension using the Azure CLI.
+To configure the Service Map functionality, the Microsoft Dependency Agent needs to be installed on each virtual machine. This can be installed as a VM extension. For this lab, we'll install the VM extension for Service Map using the Azure CLI.
 
 1. Open the Azure Cloud Shell by clicking on the 'Cloud Shell' icon.
 
     ![Screenshot of Cloud Shell button](images/Lab-guide/image86.png "Cloud Shell button")
 
-	>**Note**: If this is your first time using the Azure Cloud Shell, you will be prompted to choose between a Bash Shell and PowerShell. Choose **Bash Shell**. Also, you will be prompted to create a storage account for use by the Cloud Shell.
+	> **Note**: If this is your first time using the Azure Cloud Shell, you will be prompted to choose between a Bash Shell and PowerShell. Choose **Bash Shell**. Also, you will be prompted to create a storage account for use by the Cloud Shell.
 
 2. The Cloud Shell will open at the bottom of the Azure portal browser window. (If a PowerShell has been selected, change to the **Bash Shell**.) In the Bash Shell window, type the following command:
 
@@ -617,7 +569,7 @@ For this lab, we'll install the VM extension using the Azure CLI.
 	az vm extension set --publisher Microsoft.Azure.Monitoring.DependencyAgent --version 9.1 --name DependencyAgentWindows --vm-name WEBVM1 --resource-group HOLRG
 	```
 
-	This command will take a minute or two to run.
+	> **Note**: This command will take a minute or two to run.
 
 3. Repeat the above command two more times, replacing the `--vm-name` parameter with **WEBVM2** and then with **SQLVM**.
 
@@ -625,11 +577,11 @@ For this lab, we'll install the VM extension using the Azure CLI.
 
     ![Screenshot of the All resources blade with ServiceMap selected.](images/Lab-guide/image88.png "All resources blade")
 
-5. This will bring up the Service Map screen and you'll see that it's already populated with some data. Since we installed the agent on the three Windows virtual machines, the Service Map is showing these virtual machines now reporting data. Click on the **Service Map** tile.
+5. This will bring up the Service Map blade and you'll see that it is already populated with some data. Since we installed the agent on the three Windows virtual machines, the Service Map is showing these virtual machines now reporting data. Click on the **Service Map** tile.
 
     ![The Summary section displays information for both the Service Map and Solution Resources.](images/Lab-guide/image89.png "Service Map Summary section")
 
-6. When the Service Map loads, click on **WEBVM1** to see the data that has been analyzed for that virtual machine.
+6. When Service Map loads, click on **WEBVM1** to see the data that has been analyzed for that virtual machine.
 
     ![Screenshot of the Service Map for WEBVM1.](images/Lab-guide/image90.png "Service Map")
 
@@ -647,13 +599,13 @@ The Update Management functionality will be configured through your Virtual Mach
 
     ![Screenshot of the Update Management window with the Enable button selected.](images/Lab-guide/image92.png "Update Management window")
 
-	>**Note**: In some cases, your Log Analytics workspace may not be shown if it is located in a different region or geography. In this case, use the option provided to create a new Log Analytics workspace.
+	> **Note**: In some cases, your Log Analytics workspace may not be shown if it is located in a different region or geography. In this case, use the option provided to create a new Log Analytics workspace.
 
 4. Wait for the deployment to complete. This can take up to 15 minutes.
 
     ![Screenshot of the Update Manager being enabled message.](images/Lab-guide/image93.png "Update Manager being enabled message")
 
-    Do not navigate away from the Update Management blade until the deployment message reads "The 'Update Management' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress."
+    > **Note**: Do not navigate away from the Update Management blade until the deployment message reads "*The 'Update Management' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress.*".
 
 5. While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4.
 
@@ -667,22 +619,17 @@ The Update Management functionality will be configured through your Virtual Mach
 
     ![Missing updates shows as zero.](images/Lab-guide/image94.png "Missing updates message")
 
-9. Click on **Schedule update deployment**. The portal shows the 'New update deployment' blade, where you can choose which updates to deploy (based on classification), which to exclude (based on KnowledgeBase ID), when to deploy, and the duration of the maintenance window (updates not deployed within 20 minutes of the end of this time window are omitted so the VM can reboot.)
+9. Click on **Schedule update deployment**. The portal shows the 'New update deployment' blade, where you can choose which updates to deploy (based on classification), which to exclude (based on KnowledgeBase ID), when to deploy, and the duration of the maintenance window (updates not deployed within 20 minutes of the end of this time window are omitted so the VM can reboot.).
 
-     ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image186.png "New update deployment")
+    ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image186.png "New update deployment for WebVM1")
 
-    Review the update settings, but do *not* configure an update deployment (to save time during the lab). Close the New update deployment blade.
+1. Review the update settings, but do *not* configure an update deployment (to save time during the lab). Close the New update deployment blade.
 
-10. Select on **Manage multiple machines**. This brings you to the Update Management view within the Azure Automation portal experience. This gives you an overview of update compliance across all of your VMs.
+10. Click on **Manage multiple machines**. This brings you to the Update Management view within the Azure Automation portal experience. This gives you an overview of update compliance across all of your VMs.
 
-     ![Screenshot of the Log Analytics Update Managemnent experience. The VMs we have created are listed, together with metrics showing the number of updates pending/failed.](images/Lab-guide/image188.png "Update Management experience")
+    ![Screenshot of the Log Analytics Update Managemnent experience. The VMs we have created are listed, together with metrics showing the number of updates pending/failed.](images/Lab-guide/image188.png "Update Management experience")
 
-11. Select **New update deployment** brings a similar update deployment blade, except in this case you can configure the update deployment to be either Windows or Linux (previously the OS was inferred from the VM), and select which VMs will be updated (previously the blade applied only to a single VM).
-
-    ![The New Update Deployment blade shows the settings described in the preceeding text.](images/Lab-guide/image187.png "New update deployment")
-
-    Updating VMs via this Log Analytics experience enables central management of updates.
-    
+    > **Note**: It may take several minutes before data is shown in this view.
 
 ### Task 6: Configure Inventory Tracking and Change Management
 
@@ -696,19 +643,19 @@ The Update Management functionality will be configured through Azure Automation.
 
 3. Verify the **Log Analytics workspace** and **Automation Account** and select **Enable**.
 
-  ![The Enable button is selected in the Change Tracking window.](images/Lab-guide/image96.png "Change Tracking window")
+    ![The Enable button is selected in the Change Tracking window.](images/Lab-guide/image96.png "Change Tracking window")
 
-4. Wait for the deployment to complete. This can take a few minutes.
+1. Wait for the deployment to complete. This can take a few minutes.
 
-  ![Screenshot of the Change Tracking being enabled message.](images/Lab-guide/image97.png "Change Tracking being enabled message")
+    ![Screenshot of the Change Tracking being enabled message.](images/Lab-guide/image97.png "Change Tracking being enabled message")
 
-Do not navigate away from the Update Management blade until the deployment message reads "The 'Change Tracking and Inventory' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress."
+    > **Note**: Do not navigate away from the Update Management blade until the deployment message reads "*The 'Change Tracking and Inventory' solution is being deployed on this virtual machine. This can take a few minutes. You can do other work while this is in progress.*".
 
-5. While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4.
+1. While the solution is deploying, navigate to **WEBVM2** and repeat steps 2-4.
 
-6. While the solution is deploying, navigate to **SQLVM** and repeat steps 2-4.
+2. While the solution is deploying, navigate to **SQLVM** and repeat steps 2-4.
 
-7. Verify that the solution has been deployed by navigating to **WEBVM1** and clicking on **Change tracking** under OPERATIONS.
+3. Verify that the solution has been deployed by navigating to **WEBVM1** and clicking on **Change tracking** under **OPERATIONS**.
 
     ![Under Operations, Change tracking is selected.](images/Lab-guide/image95.png "Operations section")
 
@@ -728,7 +675,7 @@ In this exercise, you will instrument the CloudShop using Application Insights a
 
 ### Task 1: Install and Configure the Application Insights Status Monitor
 
-To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
+To read more about this tool follow this [link](http://bit.ly/2ksdzKV).
 
 1. Open a Remote Desktop Connection to **WEBVM1**.
 
@@ -756,12 +703,12 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     - Microsoft Azure Subscriptions: **Use the same subscription**
 
-    - Resource Groups: **HOLInsights**
+    - Resource Groups: **HOLInsights** (It will create a new RG in Azure if you type **HOLInsights**)
 
     - Application Insights Resource: **HOLCloudShop**
 
-    - Location: **Select the same region as your deployment**.
-
+    - Location: **Select the same region as your deployment**. 
+    
     ![Fields in the Configuration settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image104.png "Configuration settings dialog box")
 
 8. This will build the Application Insights workspace for you in Azure.
@@ -770,7 +717,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![In the Default Web Site section, the Add Application Insights button is selected.](images/Lab-guide/image105.png "Default Web Site section")
 
-10. Click **Restart IIS** to complete the Setup.
+10. Click **Restart IIS** to complete the setup.
 
     ![Screenshot of the Restart IIS button.](images/Lab-guide/image106.png "Restart IIS button")
 
@@ -778,25 +725,23 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![IIS applications show as enabled in the Application Insights Status Monitor, and under Default Web Site, Status is Application Insights enabled, and Data is set to the specified Application Insights resource.](images/Lab-guide/image107.png "Application Insights Status Monitor")
 
-12. Disconnect from **WEBVM1**.
+12. Connect to a Remote Desktop Session for **WEBVM2**. To connect to **WEBVM2**, you can RDP to its private IP from **WEBVM1**. 
 
-13. Connect to a Remote Desktop Session for **WEBVM2**. If you RDP to the public IP it may take you to the WEBVM1 again because of Loadbalancer rule. So in order to connect to the WEBVM2, You can RDP to its private IP from the WEBVM1. 
-
-14. Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Select **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**. You may need to change the internet explorer security settings to allow download file in order to install.
+13. Open Internet Explorer and follow this link: <http://bit.ly/2jxQ43z>. Select **Run** on the Question if you want to run the file: **AppliationsInsightsMonitor.exe**. You may need to change the internet explorer security settings to allow download file in order to install.
 
     ![Screenshot of the Run button.](images/Lab-guide/image99.png "Run button")
 
-15. This will start the Web Platform Installer. Click on **Install** followed by **I Accept** on the following screen, and **Continue**.
+14. This will start the Web Platform Installer. Click on **Install** followed by **I Accept** on the following screen, and **Continue**.
 
     ![On the Web Platform Installer, under Application Insights Status Monitor, the Install button is selected.](images/Lab-guide/image100.png "Web Platform Installer")
 
-16. Once the Monitor is installed, select the **Sign In** link under the **Configuration**.
+15. Once the Monitor is installed, select the **Sign In** link under the **Configuration**.
 
     ![In the Application Insights Status Monitor, Sign in is selected.](images/Lab-guide/image101.png "Application Insights Status Monitor ")
 
-17. You will sign-in to Azure as normal.
+16. You will sign-in to Azure as normal.
 
-  ![Screenshot of the Microsoft Sign in box.](images/Lab-guide/image102.png "Microsoft Sign in box")
+> ![Screenshot of the Microsoft Sign in box.](images/Lab-guide/image102.png "Microsoft Sign in box")
 
 18. Under the **Send telemetry to**: Select **Default website under Existing Application Insights resource**. Then, click **Configure Settings**.
 
@@ -804,25 +749,25 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
 19. On the **Configuration settings for Application Insights**, complete the information as follows, and select **OK**:
 
-    - Microsoft Azure Subscriptions: **Use the same subscription**
+    a. Microsoft Azure Subscriptions: **Use the same subscription**
 
-    - Resource Groups: **HOLInsights**
+    b. Resource Groups: **HOLInsights**
 
-    - Application Insights Resource: **HOLCloudShop**
+    c. Application Insights Resource: **HOLCloudShop**
 
-    - Location: **Select the same region as your deployment**.
+    d. Location: **Select the same region as your deployment**.
 
     ![Fields in the Configuration Settings for Application Insights dialog box are set to the previously defined settings.](images/Lab-guide/image109.png "Configuration Settings for Application Insights dialog box")
 
-20. This will attach **WEBVM2** to the Application Insights workspace you created a moment ago in Azure. Next, select **Add** **Application Insights**.
+20. This will attach **WEBVM2** to the Application Insights workspace you created a moment ago in Azure. Next, select **Add Application Insights**.
 
     ![Under Default Web Site, the Add Application Insights button is selected.](images/Lab-guide/image110.png "Default Web Site section")
 
-21. Select **Restart IIS** to complete the Setup.
+21. Select **Restart IIS** to complete the setup.
 
     ![Screenshot of the Restart IIS button.](images/Lab-guide/image106.png "Restart IIS button")
 
-    This will only take a few seconds. You can disconnect from WEBVM2 when done.
+    > **Note**: This will only take a few seconds. You can disconnect from **WEBVM2** when done.
 
 ### Task 2: Explore the Application Map, configure alerts, availability tests, and performance tests
 
@@ -834,15 +779,15 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![Screenshot showing clicks for HOLCloudShop (1) and Application map (2).](images/Lab-guide/image112.png "Open HOLCloudShop Application Map")
 
-3. Take a few minutes to explore the Application map. Click on each node in the application map, and look at the data available.
+3. Take a few minutes to explore the Application map. Click on each node in the application map and look at the data available.
 
 	![Screenshot of the Application Map.](images/Lab-guide/image114.png "Application Map")
 
-4. Close the **Application Map** pane, then Click on the **Alerts** in the **Configure** section of the Application Insights blade.
+4. Close the **Application Map** pane, then click on **Alerts**.
 
     ![Under Configure, Alerts (Classic) is selected.](images/Lab-guide/image115.png "Alerts (Classic) selection")
 
-5. Select **View Classic Alert (next to the bell icon)** then select **+Add Metric Alert (Classic),** complete the blade with the following information, and select **OK**
+5. Select **View Classic Alert (next to the bell icon)** then select **+Add Metric Alert (Classic),** complete the blade with the following information, and select **OK**:
 
     - Name: **CloudShopProcessorAlert**
 
@@ -860,13 +805,13 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![Screenshot of the rest of the Add rule blade fields.](images/Lab-guide/image117.png "Add rule blade fields - continued")
 
-6. Select **OK** to save the alert. The portal will update with the new Alert.
+6. Select **OK** to save the alert. The portal will update with the new alert.
 
     ![Alert settings for CloudShopProcessorAlert display.](images/Lab-guide/image118.png "Alert settings")
 
-7. In your **HOLRG,** locate the **hackathonPublicIP** Public IP Address, take note of the DNS name which is on the front of the Azure Load Balancer for the CloudShop App running on **WEBVM1** & **WEBVM2**.
+7. In your **HOLRG,** locate the **PublicIP** Address, take note of the DNS name which is on the front of the load balancer Application Gateway for the CloudShop App running on **WEBVM1** & **WEBVM2**.
 
-8. Next in the **HOLCloudShop** Application Insights workspace, under the **Investigate** section, select **Availability**.
+8. Next in the **HOLCloudShop** Application Insights workspace, under the **Investigate** section, select **Availability**
 
     ![Under Investigate, Availability is selected.](images/Lab-guide/image119.png "Investigate section")
 
@@ -876,7 +821,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     - Test type: **URL Ping Test**
 
-    - URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
+    - URL: **http://cloudshop-XX.southcentralus.cloudapp.azure.com**
 
     - Test locations: Choose locations from all over the world.
 
@@ -884,9 +829,9 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![Create test blade fields are set to the previously defined settings.](images/Lab-guide/image120.png "Create test blade")
 
-10. Select **Create** to crate the availability test.
+10. Select **Create** to create the availability test.
 
-	> **Note:** If the CloudShop Application becomes unavailable to this WebTest, you will then receive an email alert from Azure Application Insights.
+	> **Note**: If the CloudShop Application becomes unavailable to this WebTest, you will then receive an email alert from Azure Application Insights.
 
 11. Select **Performance Testing** in the **Configure** section.
 
@@ -896,9 +841,9 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
 13. Click on **Configure Test Using** and complete this using these inputs. Then, select **Done**.
 
-    - Test Type: **Manual Test**
+    - Test Type: Manual Test
 
-    - URL: **http://HOLXXXXXX.southcentralus.cloudapp.azure.com**
+    - URL: **http://cloudshop-XXX.southcentralus.cloudapp.azure.com**
 
     ![Fields in the Configure test using blade are set to the previously defined settings.](images/Lab-guide/image122.png "Configure test using blade")
 
@@ -906,7 +851,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     - Name: **CloudShopLoadTest**
 
-    - Generate Load from: **Select a Region**.
+    - Generate Load from: **Select a Region**
 
     - User Load: **2000**
 
@@ -934,23 +879,23 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![Screenshot of the Live Metrics Stream page, with Incoming Requests, Outgoing Requests, and Overall Health, line and scatter graphs, and Server information.](images/Lab-guide/image127.png "Live Metrics Stream page")
 
-20. If you go back to the **Performance Testing** blade, and click on **CloudShopLoadTest,** you will see the metrics form the run.
+20. If you go back to the **Performance Testing** blade, and click on **CloudShopLoadTest,** you will see the metrics from the test run.
 
     ![Screenshot of Performance under load metrics.](images/Lab-guide/image128.png "Performance under load metrics")![Screenshot of the Requests donut chart.](images/Lab-guide/image129.png "Requests graph")
 
-21. Close the Performance Test, and click on the **Performance** under Investigate.
+21. Close the Performance Test and click on the **Performance** under **Investigate**.
 
     ![Under Investigate, Performance (preview) is selected.](images/Lab-guide/image130.png "Investigate section")
 
-22. Explore the metrics from the CloudShop Application.
+22. Explore the metrics from the CloudShop application.
 
     ![Screenshot of the CloudShop Application desktop.](images/Lab-guide/image131.png "CloudShop Application desktop")
 
-23. The Load Test should also have caused the alert on high processor usage to be trigged. An email should have been received.
+23. The Load Test should also have caused the alert on high processor usage to be triggered. An email should have been received.
 
     ![Screenshot of an Azure Application Insights warning alert.](images/Lab-guide/image132.png "Azure Application Insights alert")
 
-	>**Note:** The email may take several minutes to arrive. You can proceed with the lab and check for the email later.
+	> **Note**: The email may take several minutes to arrive. You can proceed with the lab and check for the email later.
 
 24. The alert will quickly resolve as the Load Test has completed causing the CPU condition to quiet.
 
@@ -960,7 +905,7 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
 1. Move to your **HOLRG** Resource group and stop both **WEBVM1** and **WEBVM2**.
 
-2. Navigate back to the **HOLCloudShop** Application Insights portal. Select **Availability**, and notice that the availability tests have start to fail once the web VMs are stopped.
+2. Navigate back to the **HOLCloudShop** Application Insights portal. Select **Availability** and notice that the availability tests have start to fail once the web VMs are stopped.
 
     ![On the Application Insights blade, the Availability blade shows the web tests failing](images/Lab-guide/image134.png "Application Insights Availability blade")
 
@@ -968,39 +913,39 @@ To read more about this tool follow this link: <http://bit.ly/2ksdzKV>.
 
     ![Screenshot showing CloudShopWebTest details chart and test location status.](images/Lab-guide/image135.png "CloudShopWebTest summary")
 
-4. A few email alerts should come into your inbox:
+5. A few email alerts should come into your inbox.
 
     ![Azure Application Insights warning alert screenshot](images/Lab-guide/image137.png "Azure Application Insights warning alert")
 
     ![Azure Application Insights details screenshot](images/Lab-guide/image138.png "Azure Application Insights details")
 
-5. Select the "See the analysis of this issue" which will load the Azure portal.
+6. Select the *See the analysis of this issue* link in the email which will load the Azure portal.
 
     ![Both the Smart Detection and An abnormal rise in failed request rate blades display.](images/Lab-guide/image139.png "Smart Detection and An abnormal rise in failed request rate blades")
 
-6. Move back to your **HOLRG and** restart the VMs
+7. Move back to your **HOLRG and** restart the VMs.
 
-7. Once the VMs are back online, the website will come back up. This will initiate responses to the Web Test and sending data to the Applications Insights portal. An email will be sent resolving the Alert. After a period of time, the Smart Detection Alert will also resolve.
+8. Once the VMs are back online, the website will come back up. This will initiate responses to the Web Test and sending data to the Applications Insights portal. An email will be sent resolving the alert. After a period of time, the Smart Detection Alert will also resolve.
 
     ![Screenshot of the Azure Application Insights success message.](images/Lab-guide/image140.png "Azure Application Insights success message")
 
 ### Summary
 
-In this exercise, you instrumented the CloudShop using Application Insights at runtime. This was accomplished by installing the Applications Insights Monitor for the web services and configuring an Application Insight workspace in Azure. Then, you configured Application Insights to perform web tests and alerts.
+In this exercise, you instrumented the CloudShop using Application Insights at runtime. This was accomplished by installing the Application Insights Monitor for the web services and configuring an Application Insights workspace in Azure. Then, you configured Application Insights to perform web tests and alerts.
 
-## Exercise 5: Explore Azure Security and Operations Management, Application Insights and build a dashboard
+## Exercise 5: Explore Azure Security and Operations Management, Application Insights, and build a dashboard
 
 Duration: 45 minutes
 
 ### Overview
 
-In this exercise, you will explore the information and data being provided by Azure Security and Operations Management and Application Insights to gain situational awareness of the application and infrastructure. You will look at the Security posture of the infrastructure, the applications performance, and build a dashboard that can be used to manage it moving forward.
+In this exercise, you will explore the information and data being provided by Azure Security and Operations Management and Application Insights to gain situational awareness of the application and infrastructure. You will look at the security posture of the infrastructure, the applications performance, and build a dashboard that can be used to manage it moving forward.
 
 ### Task 1: Work with Log Analytics queries
 
 In this section, we will perform an ad-hoc search in Log Analytics data to see where our servers are not in compliance with security baselines. In the Log Search interface, we can perform ad-hoc searches against the log data being ingested into the Log Analytics service. Because the data is indexed, searching is very fast.
 
-1. Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for "*log analytics*", and selecting **Log Analytics**.
+1. Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for *log analytics*, and selecting **Log Analytics**.
 
     ![Selections in the Azure Portal display as previously mentioned.](images/Lab-guide/image66.png "Azure Portal")
 
@@ -1010,15 +955,20 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
 3. In the query editor, enter the following query: *Update \| where OSType!=\"Linux\" and Optional==false*. Select Run. This will search the Update management logs and report results. There are many other data sources we can query.
 
+    ```
+    Update | 
+    where OSType!="Linux" and Optional==false
+    ```
+
     ![Screenshot of the Log Search blade.](images/Lab-guide/image142.png "Log Search blade")
 
-    >**Note:** you may have less or more data, but keep in mind, the service has only been collecting data since you began the lab.
+    > **Note**: you may have less or more data, but keep in mind, the service has only been collecting data since you began the lab.
 
 4. Notice in the left, there are different types of data. Select **Windows Defender** followed by **Apply**.
 
     ![Under product, both the Windows Defender checkbox and the Apply button are selected.](images/Lab-guide/image143.png "Product section")
 
-5. Notice the query dialog (where you entered a search before) has a search string in it querying for the type "Product==Windows Defender".
+5. Notice the query dialog (where you entered a search before) has a search string in it querying for the type *Product==Windows Defender*.
 
     ![An updated search string displays in the Query dialog box.](images/Lab-guide/image144.png "Query dialog box")
 
@@ -1032,11 +982,11 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
 8. Further refinements can be made as needed. Select additional refiners to update the search.
 
-9. Next, sort the findings, so the Computers are sorted alphabetically. Click on the column header **Computer** until the virtual machines are sorted correctly.
+9.  Next, sort the findings, so the computers are sorted alphabetically. Click on the column header **Computer** until the virtual machines are sorted correctly.
 
     ![In the Table, on the header row, Computer is selected.](images/Lab-guide/image147.png "Table")
 
-10. Now we will export the list. This may be helpful if we wanted to divide the findings list out amongst administrators, so several people can help remediate the findings. Click on **Export**.
+10. Now we will export the list. This may be helpful if we wanted to share the findings list out amongst administrators, so several people can help remediate the findings. Click on **Export**.
 
     ![On the Log Search blade top menu, Export is selected.](images/Lab-guide/image148.png "Log Search blade top menu")
 
@@ -1046,7 +996,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
    ![The first message asking if you want to save SearchResults.csv has the Save button selected. The second message, download has completed has the Open button selected. The third message asks how you want to open the file, and Notepad is selected.](images/Lab-guide/image150.png "Multiple messages")
 
-12. Review the text file. Then, close it. You can also copy the file to your local PC and view in Excel.
+12. Review the text file. Then, close it. You can also copy the file to your local PC and view it in Excel.
 
     ![Screenshot of the .csv information displaying in a Microsoft Excel window.](images/Lab-guide/image151.png "Excel window")
 
@@ -1054,7 +1004,7 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
 
     ![Screenshot of a Search query with the Copy option selected.](images/Lab-guide/image152.png "Search query")
 
-14. Click the **Saved Searches** followed by **+Add**.
+14. Click the **Saved Searches** followed by **+ Add**.
 
     ![Saved Searches is selected from the Log Search blade top menu.](images/Lab-guide/image153.png "Log Search blade top menu")
 
@@ -1085,15 +1035,17 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
     | extend total_number_of_buckets=round((end_time-start_time)/1h)+1
     | extend availability_rate=total_available_hours*100/total_number_of_buckets
     ```
-    Click **Run**.
 
-18. Select **Table** output. Notice how this query calculates VM availability, based on heartbeats.
+18. Click **Run**.
 
-    ![Screenshot showing the preceeding query in Log Analytics, with a table showing the %age availability of each VM.](images/Lab-guide/image185.png "Log Search showing VM availability query")
+19. Select **Table** output. Notice how this query calculates VM availability, based on heartbeat.
 
-    For more information on how this query works, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/server-availability-rate.md>.
+    ![Screenshot showing the preceding query in Log Analytics, with a table showing the %age availability of each VM.](images/Lab-guide/image185.png "Log Search showing VM availability query")
 
-19. Replace the current query with the following:
+    For more information on how this query works, see: <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/server-availability-rate.md>.
+
+20. Replace the current query with the following:
+    
     ```
     // Find all processes that started in the last 3 days. ID 4688: A new process has been created.
     let RunProcesses = 
@@ -1111,9 +1063,10 @@ In this section, we will perform an ad-hoc search in Log Analytics data to see w
     | summarize count() by bin (TimeGenerated, 1h), Process
     | render timechart
     ```
-    Click **Run**.
 
-    This query uses security events (only available when using the Standard tier of Security Center) to identify how often each process was run in the past 3 days, and then calcualtes the most commonly run processes. For more information, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/top-5-running-processes-in-the-last-3-days.md>.
+21. Click **Run**.
+
+    > **Note**: This query uses security events (only available when using the Standard tier of Security Center) to identify how often each process was run in the past 3 days, and then calculates the most commonly run processes. For more information, see <https://github.com/MicrosoftDocs/LogAnalyticsExamples/blob/master/log-analytics/top-5-running-processes-in-the-last-3-days.md>.
 
 ### Task 2: Preventive maintenance using Security Center
 
@@ -1131,13 +1084,13 @@ In this section, we will use the Security Center Overview screen to review what 
 
     ![Screenshot of the Compute page, Overview tab information.](images/Lab-guide/image157.png "Compute page, Overview tab")
 
-4. This brings up the Apply disk encryption blade. This gives a description of Azure Disk Encryption, links to instructions, and a list of virtual machines affected.
+4. This brings up the **Apply disk encryption** blade. This gives a description of Azure disk encryption, links to instructions, and a list of virtual machines affected.
 
     ![On the Apply disk encryption blade, a description is given and the virtual machines created in this lab are displayed.](images/Lab-guide/image159.png "Apply disk encryption blade")
 
-5. Close the panel and navigate back to the **Security Center Overview** page. This time, click on the **Networking** tile to drill into the security health of your networking resources.
+5. Close the panel and navigate back to the **Security Center Overview** page. This time click on the **Networking** tile to drill into the security health of your networking resources.
 
-  ![Screenshot of the Networking tile.](images/Lab-guide/image160.png "Networking tile")
+    ![Screenshot of the Networking tile.](images/Lab-guide/image160.png "Networking tile")
 
 6. Review the items showing in the **Networking Recommendations**. We won't implement these recommendations today, but if we wanted to, we could click on the item and implement each recommendation from this panel.
 
@@ -1175,9 +1128,10 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![The previously mentioned selections are made in the Azure Portal.](images/Lab-guide/image66.png "Azure Portal")
 
-2. Select **Alerts** under **SHARED SERVICES**, followed by **New Alert Rule**.
+2. Select **Alerts** followed by **New Alert Rule**.
 
     ![Under Shared services, Alerts and then New Alert Rule are highlighted.](images/Lab-guide/image167.png "New Alert Rule")
+
 
 3. Under **Define alert condition**, click on **+ Select target**.
 
@@ -1191,32 +1145,40 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![+ Add Criteria is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167d.png "Add criteria screenshot")
 
-6. In the 'Configure signal logic' blade, open the **Monitor service** drop-down and select **Activity Log - Administrative**. In the search field, enter **deallocate**. Click on **Deallocate Virtual Machine (virtualMachines)**.
+6. In the 'Configure signal logic' blade, open the **Monitor service** drop-down and select **Activity Log - Administrative**. In the search field, enter **deallocate**. Click on **Deallocate Virtual Machine (VirtualMachines)**.
 
     ![Screenshot showing the 'Configure signal logic' blade, with selections matching the preceeding text.](images/Lab-guide/image167e.png "'Configure signal logic' screenshot")
 
-7. If you have recently stopped the virtual machines, you will see a history of those events, otherwise the chart will show 'No data to display'. Leave the settings at their default values, and click **Done**.
+7. If you have recently stopped the virtual machines, you will see a history of those events, otherwise the chart will show 'No data to display'. Leave the settings at their default values and click **Done**.
 
     ![Screenshot showing the 'Configure signal logic' blade, showing a chart of past 'Deallocate Virtual Machine' events. At the bottom of the screenshot, the 'Done' button is highlighted.](images/Lab-guide/image167f.png "'Configure signal logic' screenshot")
 
 8. Under **Define alert details**, fill in as follows:
-    - Alert rule name: **Alert on VM deallocate**
-    - Description: **Raise an alert any time any VM in the HOLRG resource group is stop-deallocated**.
-    - Save alert to resource group: **HOLRG**
-    - Enable rule upon creation: **Yes**
+   
+   - Alert rule name: **Alert on VM deallocate**
+
+   - Description: **Raise an alert any time any VM in the HOLRG resource group is stop-deallocated**.
+  
+   - Save alert to resource group: **HOLRG**
+  
+   - Enable rule upon creation: **Yes**
 
     ![Screenshot showing the 'Define alert details' settings filled in as described in the preceeding text.](images/Lab-guide/image167g.png "'Define alert details' screenshot")
 
-9. Under **Define action group**, select **+ New action group**.
+9.  Under **Define action group**, select **+ New action group**.
 
     ![+ New action group is highlighted on the blade defining a new Azure alert.](images/Lab-guide/image167h.png "New action group screenshot")
 
-    >**Note**: Action groups define what action is taken when an alert is fired. They are defined separately from the alert rule, so that the same action group can be re-used across multiple alerts.
+    > **Note**: Action groups define what action is taken when an alert is fired. They are defined separately from the alert rule, so that the same action group can be re-used across multiple alerts.
 
 10. Fill in the first section of the **Add action group** blade as follows:
+
     - Action group name: **Mobile app push notifications action group**
+
     - Short name: **Mobile Push**
+
     - Subscription: **Choose your subscription**.
+
     - Resource group: **HOLRG**
 
    ![Screenshot showing the first section of the 'Add action group' blade filled in as described in the preceeding text.](images/Lab-guide/image167i.png "Add action group screenshot")
@@ -1233,11 +1195,11 @@ If one of the virtual machines in the resource group were to be stopped (dealloc
 
     ![Screenshots of the notification of the successfully created alert rule.](images/Lab-guide/image171.png "Successfully created alert rule message")
 
-    >**Note:** It may take up to 5 minutes after the alert rule is created for the alert to become active.
+    > **Note**: It may take up to 5 minutes after the alert rule is created for the alert to become active.
 
 ### Task 4: Installing & using the Azure mobile application
 
-In this section, you will take your monitoring solution mobile by installing and configuring the OMS Mobile Application.
+In this section, you will take your monitoring solution mobile by installing and configuring the Azure mobile application.
 
 1. Open the **AppStore** or **Google Play** on your mobile device. Locate the search box and type **Microsoft Azure,** and press enter.
 
@@ -1247,7 +1209,7 @@ In this section, you will take your monitoring solution mobile by installing and
 
 3. Once the application has been installed, you will need to allow the application to send you notifications.
 
-4. Next, touch the Sign In Button.
+4. Next, touch the **Sign in** button.
 
     ![Screenshot of the Sign in screen.](images/Lab-guide/image173.png "Sign in screen")
 
@@ -1255,19 +1217,17 @@ In this section, you will take your monitoring solution mobile by installing and
 
 6. Once you are logged into the app, navigate to the Notifications menu to see there are currently no notifications.
 
-    ![Notifications screen screenshot.](images/Lab-guide/image174.png "Notifications screen")
-
 7. Putting the phone aside for a moment, in your desktop web browser, navigate to the **Virtual Machines** list in the Azure portal.
 
-8. Click on **checkbox next to WEBVM1**, then click **Stop**, followed by **Yes** at the confirmation prompt. This will stop (deallocate) this virtual machine, which should trigger our alert to notifiy the Azure mobile application.
+8. Click on checkbox next to **WEBVM1**, then click **Stop**, followed by **Yes** at the confirmation prompt. This will stop (deallocate) this virtual machine, which should trigger our alert and notify you through the Azure mobile application.
 
-    ![WEBVM1 is selected from the virtual machies list, and the 'stop' button is highlighted.](images/Lab-guide/image175.png "Stop WEBVM1")
+    ![WEBVM1 is selected from the virtual machines list, and the 'stop' button is highlighted.](images/Lab-guide/image175.png "Stop WEBVM1")
 
 9. In a few moments, you should receive an alert through the Azure mobile app that the virtual machine was stopped (deallocated).
 
 ### Task 5: Application Insights
 
-Understanding what is happening within an application can be very challenging, but with the Application Insights configured for CloudShop, there is great telemetry being fed to the Azure Portal. Here, you will investigate that data regarding how the CloudShop is performing.
+Understanding what is happening within an application can be very challenging, but with the Application Insights configured for CloudShop, there is great telemetry being fed to Azure which can be viewed and acted upon. Here, you will investigate that data regarding how the CloudShop is performing.
 
 1. Open the **Azure portal** and navigate to Azure Monitor by clicking on **All services**, searching for "*monitor*", and selecting **Monitor**.
 
@@ -1289,13 +1249,13 @@ Understanding what is happening within an application can be very challenging, b
 
 6. This dashboard gives near real-time insight into the performance of your application. In the screenshot below, you can see this application appears to have a performance issue with the Home/Index page. It appears to be taking 20.5 seconds on average to load. 
 
-    >**Note**: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
+    > **Note**: Your numbers may not match. By clicking on the GET Home/Index, you will see the other sections of the dashboard will filter to performance data focused on that page.
 
     ![Under Operation Name, Get Home / Index is selected.](images/Lab-guide/image181.png "Operation Name section")
 
 7. Feel free to experiment with this dashboard to understand the performance considerations of your application.
 
-8. Pin the 'Operation times' chart to to My Dashboard by clicking on the pin in the top right of the chart.
+8. Pin the 'Operation times' chart to **My Dashboard** by clicking on the pin in the top right of the chart.
 
     ![Screenshot of the Pin icon.](images/Lab-guide/image183.png "Pin icon")
 
@@ -1315,6 +1275,6 @@ Duration: 10 mins
 
 In this exercise, attendees will de-provision any Azure resources that were created in support of the lab.
 
-1. Delete the **HOLRG, HOLInsights**, and **OPSLABRG** resource groups.
+1. Delete the **HOLRG, HOLInsights**, and **OPSLABRG** resource groups
 
 You should follow all steps provided *after* attending the Hands-on lab.

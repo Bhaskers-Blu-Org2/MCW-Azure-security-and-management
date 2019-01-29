@@ -9,7 +9,7 @@ Whiteboard design session trainer guide
 </div>
 
 <div class="MCWHeader3">
-September 2018
+December 2018
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -30,23 +30,23 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
     - [Role of the trainer](#role-of-the-trainer)
     - [Whiteboard design session flow](#whiteboard-design-session-flow)
     - [Before the whiteboard design session: How to prepare](#before-the-whiteboard-design-session--how-to-prepare)
-    - [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session-tips-for-an-effective-whiteboard-design-session)
+    - [During the whiteboard design session: Tips for an effective whiteboard design session](#during-the-whiteboard-design-session--tips-for-an-effective-whiteboard-design-session)
 - [Azure security and management whiteboard design session student guide](#azure-security-and-management-whiteboard-design-session-student-guide)
     - [Abstract and learning objectives](#abstract-and-learning-objectives)
-    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study)
+    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
         - [Customer situation](#customer-situation)
         - [Customer needs](#customer-needs)
         - [Customer objections](#customer-objections)
         - [Infographic for common scenarios](#infographic-for-common-scenarios)
-    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution)
-    - [Step 3: Present the solution](#step-3-present-the-solution)
+    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3--present-the-solution)
     - [Wrap-up](#wrap-up)
     - [Additional references](#additional-references)
 - [Azure security and management whiteboard design session trainer guide](#azure-security-and-management-whiteboard-design-session-trainer-guide)
-    - [Step 1: Review the customer case study](#step-1-review-the-customer-case-study-1)
-    - [Step 2: Design a proof of concept solution](#step-2-design-a-proof-of-concept-solution-1)
-    - [Step 3: Present the solution](#step-3-present-the-solution-1)
-    - [Wrap-up](#wrap-up-1)
+    - [Step 1: Review the customer case study](#step-1--review-the-customer-case-study)
+    - [Step 2: Design a proof of concept solution](#step-2--design-a-proof-of-concept-solution)
+    - [Step 3: Present the solution](#step-3--present-the-solution)
+    - [Wrap-up](#wrap-up)
     - [Preferred target audience](#preferred-target-audience)
     - [Preferred solution](#preferred-solution)
     - [Checklist of preferred objection handling](#checklist-of-preferred-objection-handling)
@@ -220,9 +220,9 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 3.  Contoso needs a full infrastructure monitoring and management solution containing the following abilities. It is important that all of the machine data be captured and searchable by their teams. Software Update Management is an area that needs to be addressed, as patches need to be distributed in timely manner. Contoso needs a tool to determine where they stand if an outbreak or issue occurs. Also, whenever there is a system outage or the problem question comes up "what changed", the solution should be able to provide that type of information to the SOC. Security is a must in the cloud age, so Contoso needs a great dashboard and set of solutions that can help them understand the current status of their deployment and capture all logs in case of a breach. All of this together needs to allow for the creation of customer alerts Contoso can build on their own. They want these alerts to be flexible based on real machine data, emails to the trouble-ticket system and notifications sent to smartphones. These notifications should be accompanied by a professional mobile application not just the ability to log into a webpage from a smartphone. Finally, the customer has a huge SQL Server footprint with more than 150 applications relying on the DBMS. The solution should proactively provide feedback about the SQL Servers to help Contoso to correct known errors that Microsoft should correct on all SQL Servers.
 
-4.  Contoso is also looking for an Application Monitoring Solution that can provide end-to-end monitoring and visibility of their applications. It needs to allow the team to drill into the data and determine which pieces of the application are not performing well including the dependences such as the SQL Server and any queries that are running in the background. They also need to have a web monitoring solution providing up/down tests from spots all over the globe and the ability to tell them when the application is not performing as expected. Performance testing is something they have lacked for a long time, but they have a good understanding of the applications in their current deployments. Contoso needs the ability to perform simple performance tests that will help them benchmark and size their VMs without having to run a bunch of code or invest in expensive tools or consultants. One final aspect that is important to Contoso is the ability to create Application Layer Alerts which need to show up in the portal. Also, the Application Management Solution needs to integrate with the Management and Monitoring solution. This means that all of the data from Application Performance Management (APM) should flow into the other management system.
+4.  Contoso is also looking for an Application Monitoring Solution that can provide end-to-end monitoring and visibility of their applications. It needs to allow the team to drill into the data and determine which pieces of the application are not performing well including the dependencies such as the SQL Server and any queries that are running in the background. They also need to have a web monitoring solution providing up/down tests from spots all over the globe and the ability to tell them when the application is not performing as expected. Performance testing is something they have lacked for a long time, but they have a good understanding of the applications in their current deployments. Contoso needs the ability to perform simple performance tests that will help them benchmark and size their VMs without having to run a bunch of code or invest in expensive tools or consultants. One final aspect that is important to Contoso is the ability to create Application Layer Alerts which need to show up in the portal. Also, the Application Management Solution needs to integrate with the Management and Monitoring solution. This means that all of the data from Application Performance Management (APM) should flow into the other management system.
 
-5.  Contoso are concerned about the potential complexity of having separate monitoring solutions for infrastructure and applications. They are looking for an integrated approach that offers consistency for log search, alerting, analytics and dashboarding across all of their monitoring and diagnostics data.
+5.  Contoso are concerned about the potential complexity of having separate monitoring solutions for infrastructure and applications. They are looking for an integrated approach that offers consistency for log search, alerting, analytics and dash boarding across all of their monitoring and diagnostics data.
 
 ### Customer objections 
 
@@ -230,7 +230,7 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 2.	They believe Microsoft does their best for securing the Azure network, but they are very unsure how to detect when hackers are attacking their system. How will Microsoft's solution ensure we have visibility into our security posture?
 
-3.	SQL Server is used extensively in their application eco-system. Contoso is concerned about proper configuration, and they are worried SQL may not perform adequately on VMs in Azure. The system needs to provide feedback on proper configurations with the ability to drill down into how the system is performing, even down to the query level, showing dependences and their ASP.NET applications.
+3.	SQL Server is used extensively in their application eco-system. Contoso is concerned about proper configuration, and they are worried SQL may not perform adequately on VMs in Azure. The system needs to provide feedback on proper configurations with the ability to drill down into how the system is performing, even down to the query level, showing dependencies and their ASP.NET applications.
 
 4.	Contoso are concerned about the administrative controls. They would like to ensure that only approved administrators have access to manage virtual machines.
 
@@ -273,7 +273,7 @@ Directions: With all participants at your table, respond to the following questi
 *Address the following customer requirements*
 
 1.  How can you deliver a single consistent experience for log search, alerting,
-    analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+    analytics and dash boarding across all of Contoso's monitoring and diagnostics data?
 
 2.  What services and approach would you take to address the need to continually
     update their infrastructure and configuration of their applications?
@@ -494,11 +494,11 @@ sponsorship and buy in will be important to the success of the solution.
     Contoso's leaders, described as the "end-to-end" view of the e-commerce
     applications into Azure IaaS.
 
-    ![The Proof of Concept Solution diagram includes Cloud Shop Application, and Azure Management and Monitoring.](images/image3.png "Proof of Concept Solution diagram")
+    ![The Proof of Concept Solution diagram includes Cloud Shop Application, and Azure Management and Monitoring.](images/image00.png "Proof of Concept Solution diagram")
 
 *Address the following customer requirements*
 
-1.  How can you deliver a single consistent experience for log search, alerting, analytics and dashboarding across all of Contoso's monitoring and diagnostics data?
+1.  How can you deliver a single consistent experience for log search, alerting, analytics and dash boarding across all of Contoso's monitoring and diagnostics data?
 
     - [Azure Monitor](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor "Azure Monitor overview documentation page") supports ingesting logs and metrics from multiple sources. This includes application logs, diagnostic logs, and system metrics, such as CPU load, disk capacity, and network utilization. It can also ingest the Azure Activity Log, which records all Azure administrator activity.
     
@@ -527,7 +527,10 @@ sponsorship and buy in will be important to the success of the solution.
        application configurations. This is a fully automated install and
        configuration management solution leveraging DevOps principles.
        Deployment can be done via the Portal, Visual Studio, PowerShell or the
-       Azure CLI leveraging a Source Control Platform such as GitHub.
+       Azure CLI leveraging a Source Control Platform such as Azure DevOps, GitHub etc. 
+
+       Using **Azure DevOps** as a Source Control solution, provides the ability to automate and deploy their VMs in a repeatable manor, without human interaction. Azure DevOps will be used as managed CI/CD to deploy code / template. All subsequent updates to the systems will be made by checking the template through Azure DevOps, making changes, testing them thoroughly and then deploy the updated template
+ 
 
         ![The DevOps - People, Process, Tools diagram has the following steps: Developers, Code Repository, Build, Test, Deploy, Contoso App, and Monitor and Improve.](images/image4.png "DevOps - People, Process, Tools diagram")
 
@@ -871,7 +874,7 @@ sponsorship and buy in will be important to the success of the solution.
     concerned about proper configuration, and they are worried SQL may not
     perform adequately on VMs in Azure. The system needs to provide feedback on
     proper configurations with the ability to drill down into how the system is
-    performing, even down to the query level, showing dependences and their
+    performing, even down to the query level, showing dependencies and their
     ASP.NET applications.
     
     - The SQL Server Assessment that is part of Security Center can be implemented with just a few clicks by Contoso. This assessment will run once a week and the teams can stay ahead potential issues and will have step-by-step remediation’s to know problems and misconfigurations.
