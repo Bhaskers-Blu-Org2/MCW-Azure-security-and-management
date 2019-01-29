@@ -7,5 +7,5 @@
 
 [HOL step-by-step - Azure security and management.html](https://cloudworkshop.blob.core.windows.net/operations-management-suite/Hands-on%20lab/HOL%20step-by-step%20-%20Azure%20security%20and%20management.html)
 
-[HOL unguided - Azure security and management.html](https://cloudworkshop.blob.core.windows.net/operations-management-suite/Hands-on%20lab/HOL%20unguided%20-%20Azure%20security%20and%20management.html)
+
 
