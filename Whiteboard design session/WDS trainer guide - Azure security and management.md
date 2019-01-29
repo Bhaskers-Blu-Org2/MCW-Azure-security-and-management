@@ -248,7 +248,7 @@ Of course, security is on the top of the chain, so they also need a security sol
 
 Design a solution and prepare to present the solution to the target customer audience in a 15-minute chalk-talk format.
 
-Time frame: 60 minutes
+Timeframe: 60 minutes
 
 **Business needs**
 
@@ -323,7 +323,7 @@ Prepare a 15-minute chalk-talk style presentation to the customer.
 
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Time frame: 30 minutes
+Timeframe: 30 minutes
 
 **Presentation**
 
