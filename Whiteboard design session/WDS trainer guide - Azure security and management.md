@@ -378,7 +378,7 @@ Directions: Tables reconvene with the larger group to hear the facilitator/SME s
 
 -   Ask, "What questions do you have about the customer case study?"
 
--   Briefly review the steps and time frames of the whiteboard design session.
+-   Briefly review the steps and timeframes of the whiteboard design session.
 
 -   Ready, set, go! Let the table participants begin.
 
