@@ -1,6 +1,6 @@
 # Azure security and management
 
-## The content of this workshop has been consolidated with the Azure security, privacy, and compliance workshop and renamed Security baseline on Azure . This workshop is no longer being maintained and will be archived on June 28, 2019.
+## The content of this workshop has been consolidated with the Azure security, privacy, and compliance workshop and renamed Security baseline on Azure. This workshop is no longer being maintained and will be archived on June 28, 2019.
 
 Contoso Holdings LLC is a multi-national holding company headquartered in Los Angeles, CA that owns 48 manufacturing companies located in North America, Europe, and Asia. 
 
